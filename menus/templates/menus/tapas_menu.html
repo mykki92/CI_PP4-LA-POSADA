@@ -10,20 +10,44 @@
     </div>
 </div>
 <div class="row justify-content-center">
-
     <!-- Salads & Cold Cuts Items-->
     <div class="col-sm-8">
         <hr><h2>Salads & Cold Cuts</h2><hr>
-        {% for food in tapas_list %}
-        {% if food.tapas_type == 0 %}
-        <br><h3>{{ food.tapas_name }}</h3>
-        {{ food.description | safe }} 
-        <p>TAPAS: £{{ food.tapas_price }}0 PLATO: £{{ food.plato_price }}0</p>
+        {% for item in tapas_list %}
+        {% if item.tapas_type == 0 %}
+        <br><h3>{{ item.tapas_name }}</h3>
+        {{ item.description | safe }} 
+        <p>TAPAS: £{{ item.tapas_price }}0 PLATO: £{{ item.plato_price }}0</p>
         <br>
-
         {% endif %}
         {% endfor %}
-
+    </div>
+</div>
+<div class="row justify-content-center">
+    <!-- Hot Dishes Items-->
+    <div class="col-sm-8">
+        <hr><h2>Hot Dishes</h2><hr>
+        {% for item in tapas_list %}
+        {% if item.tapas_type == 1 %}
+        <br><h3>{{ item.tapas_name }}</h3>
+        {{ item.description | safe }}
+        <p>TAPAS: £{{ item.tapas_price }}0 PLATO: £{{ item.plato_price }}0</p>
+        <br>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+<div class="row justify-content-center">
+    <!-- Sides Items-->
+    <div class="col-sm-8">
+        <hr><h2>Sides</h2><hr>
+        {% for item in tapas_list %}
+        {% if item.tapas_type == 2 %}
+        <br><h3>{{ item.tapas_name }}</h3>
+        <p>£{{ item.tapas_price }}0</p>
+        <br>
+        {% endif %}
+        {% endfor %}
     </div>
 </div>
 {%endblock%}
