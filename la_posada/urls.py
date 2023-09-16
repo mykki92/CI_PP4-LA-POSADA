@@ -19,6 +19,7 @@ from menus.views import tapas_menu, drink_menu
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('summernote/', include('django_summernote.urls')),
     path('', include('home.urls'), name='home_urls'),
     path('', include('menus.urls'), name='menus_urls'),
 ]
