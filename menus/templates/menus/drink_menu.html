@@ -15,7 +15,7 @@
         <hr><h2>Beers</h2><hr>
         {% for drink in drink_list %}
         {% if drink.drink_type == 0 %}
-        <br><h3>{{ drink.drink_name }}</h3>
+        <h5>{{ drink.drink_name }}</h5>
         <p>£{{ drink.price }}0</p>
         <br>
         {% endif %}
@@ -28,7 +28,7 @@
         <hr><h2>Wines</h2><hr>
         {% for drink in drink_list %}
         {% if drink.drink_type == 1 %}
-        <br><h3>{{ drink.drink_name }}</h3>
+        <h5>{{ drink.drink_name }}</h5>
         <p>£{{ drink.price }}0</p>
         <br>
         {% endif %}
@@ -41,7 +41,7 @@
         <hr><h2>Cocktails</h2><hr>
         {% for drink in drink_list %}
         {% if drink.drink_type == 2 %}
-        <br><h3>{{ drink.drink_name }}</h3>
+        <h5>{{ drink.drink_name }}</h5>
         <p>£{{ drink.price }}0</p>
         <br>
         {% endif %}
