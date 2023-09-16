@@ -13,7 +13,8 @@ class TapasItem(models.Model):
     tapas_id = models.AutoField(primary_key=True)
     tapas_name = models.CharField(max_length=50, unique=True)
     description = models.CharField(max_length=200, unique=True)
-    price = models.FloatField()
+    tapas_price = models.FloatField()
+    plato_price = models.FloatField()
     tapas_type = models.IntegerField(choices=TAPAS_CATEGORY)
 
     class Meta:
