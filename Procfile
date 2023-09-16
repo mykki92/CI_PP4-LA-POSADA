@@ -1,1 +1,1 @@
-web: gunicorn la_posada.wsgi
+web: gunicorn pp4-la-posada.wsgi
