@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import TapasItem
+from .models import TapasItem, DrinkItem
 
 
 # View for the tapas menu page
@@ -9,5 +9,7 @@ def tapas_menu(request):
     return render(request, 'menus/tapas_menu.html', {'tapas_list': tapas_list})
 
 
+# View for the drink menu page
 def drink_menu(request):
-    return render(request, 'menus/drink_menu.html')
+    drink_list = DrinkItem.objects.all()
+    return render(request, 'menus/drink_menu.html', {'drink_list': drink_list})
