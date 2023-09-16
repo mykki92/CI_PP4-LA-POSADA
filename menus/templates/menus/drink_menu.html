@@ -9,4 +9,43 @@
         </div>
     </div>
 </div>
+<div class="row justify-content-center">
+    <!-- Beer Drink Items-->
+    <div class="col-sm-8">
+        <hr><h2>Wines</h2><hr>
+        {% for drink in drink_list %}
+        {% if drink.drink_type == 0 %}
+        <br><h3>{{ drink.drink_name }}</h3>
+        {{ drink.price }}
+        <br>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+<div class="row justify-content-center">
+    <!-- Wine Drink Items-->
+    <div class="col-sm-8">
+        <hr><h2>Wines</h2><hr>
+        {% for drink in drink_list %}
+        {% if drink.drink_type == 1 %}
+        <br><h3>{{ drink.drink_name }}</h3>
+        {{ drink.price }}
+        <br>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+<div class="row justify-content-center">
+    <!-- Cocktail Drink Items-->
+    <div class="col-sm-8">
+        <hr><h2>Wines</h2><hr>
+        {% for drink in drink_list %}
+        {% if drink.drink_type == 2 %}
+        <br><h3>{{ drink.drink_name }}</h3>
+        {{ drink.price }}
+        <br>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
 {%endblock%}
