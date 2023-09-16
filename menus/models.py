@@ -12,7 +12,7 @@ class TapasItem(models.Model):
     """
     tapas_id = models.AutoField(primary_key=True)
     tapas_name = models.CharField(max_length=50, unique=True)
-    description = models.CharField(max_length=200, unique=True, blank=True)
+    description = models.CharField(max_length=200, blank=True)
     tapas_price = models.FloatField(default=0)
     plato_price = models.FloatField(default=0)
     sides_price = models.FloatField(default=0)
@@ -32,7 +32,7 @@ class DrinkItem(models.Model):
     """
     drink_id = models.AutoField(primary_key=True)
     drink_name = models.CharField(max_length=50, unique=True)
-    description = models.CharField(max_length=200, unique=True, blank=True)
+    description = models.CharField(max_length=200, blank=True)
     price = models.FloatField()
     drink_type = models.IntegerField(choices=DRINK_CATEGORY,)
 
