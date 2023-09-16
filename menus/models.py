@@ -12,9 +12,10 @@ class TapasItem(models.Model):
     """
     tapas_id = models.AutoField(primary_key=True)
     tapas_name = models.CharField(max_length=50, unique=True)
-    description = models.CharField(max_length=200, unique=True)
-    tapas_price = models.FloatField()
-    plato_price = models.FloatField()
+    description = models.CharField(max_length=200, unique=True, blank=True)
+    tapas_price = models.FloatField(default=0)
+    plato_price = models.FloatField(default=0)
+    sides_price = models.FloatField(default=0, blank=True)
     tapas_type = models.IntegerField(choices=TAPAS_CATEGORY)
 
     class Meta:
