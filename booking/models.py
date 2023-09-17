@@ -34,10 +34,10 @@ class Table(models.Model):
     seats = models.IntegerField(default=2)
 
     class Meta:
-        ordering = ['-max_seats']
+        ordering = ['-seats']
 
     def __str__(self):
-        return self.table_name
+        return self.table_number
 
 
 # class for the database booking model

@@ -21,7 +21,7 @@ class MakeBooking(View):
     Displays the booking form and auto fills the email field if the user
     is signed in
     """
-    template_name = 'booking/booking.html'
+    template_name = 'booking/make_booking.html'
     success_message = 'Thats in the diary, well see you soon!'
 
     def get(self, request, *args, **kwargs):
@@ -30,7 +30,7 @@ class MakeBooking(View):
             booking_form = BookingForm(initial={'email': email})
         else:
             booking_form = BookingForm()
-        return render(request, 'booking/booking.html',
+        return render(request, 'make_booking.html',
                       {'booking_form': booking_form})
 
     def post(self, request):
@@ -47,5 +47,5 @@ class MakeBooking(View):
             messages.success(
                 request, "Booking successful, awaiting confirmation")
 
-        return render(request, 'booking/booking.html',
+        return render(request, 'make_booking.html',
                       {'booking_form': booking_form})
