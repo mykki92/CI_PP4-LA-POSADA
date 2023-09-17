@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+# View to display the booking page
+def booking(request):
+    return render(request, 'booking/booking.html')
