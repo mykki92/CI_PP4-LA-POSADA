@@ -37,7 +37,7 @@ class BookingAdmin(admin.ModelAdmin):
         'created_on')
 
     search_fields = ['guest__name']
-    list_filter = (('requested_date', DateRangeFilter),)
+    list_filter = (('booking_date', DateRangeFilter),)
     actions = ['confirm_booking']
 
     def confirm_booking(self, request, queryset):

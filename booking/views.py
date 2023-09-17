@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.views import generic, View
 from django.contrib.auth.models import User
 from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
+from django.views.generic.edit import UpdateView
+from django.core.paginator import Paginator
 import datetime
 from .models import Booking
 from .forms import BookingForm
@@ -49,3 +52,11 @@ class MakeBooking(View):
 
         return render(request, 'make_booking.html',
                       {'booking_form': booking_form})
+
+
+# Class to display booking confirmation
+class BookingConfirmed(generic.DetailView):
+    template_name = 'bookings/booking_confirmed.html'
+
+    def get(self, request):
+        return render(request, 'bookings/booking_confirmed.html')
