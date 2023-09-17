@@ -21,7 +21,7 @@ class MakeBooking(View):
     Displays the booking form and auto fills the email field if the user
     is signed in
     """
-    template_name = 'booking/make_booking.html'
+    template_name = 'make_booking.html'
     success_message = 'Thats in the diary, well see you soon!'
 
     def get(self, request, *args, **kwargs):
