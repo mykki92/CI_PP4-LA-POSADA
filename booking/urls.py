@@ -1,7 +1,7 @@
 from django.urls import path
-from . import views
+from booking import views
 
 # url for the booking page
 urlpatterns = [
-    path('', views.booking, name="booking"),
+    path('booking', views.booking, name="booking"),
 ]
