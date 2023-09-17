@@ -3,16 +3,40 @@ from phonenumber_field.modelfields import PhoneNumberField
 from django.contrib.auth.models import User
 
 
+# choices for booking times
+booking_slots = (
+    ('12:00', '12:00'),
+    ('13:00', '13:00'),
+    ('14:00', '14:00'),
+    ('15:00', '15:00'),
+    ('16:00', '16:00'),
+    ('17:00', '17:00'),
+    ('18:00', '18:00'),
+    ('19:00', '19:00'),
+    ('20:00', '20:00'),
+    ('21:00', '21:00'),
+    ('22:00', '22:00'),
+)
+
+# booking status categories
+booking_status = (
+    ('Pending', 'Pending'),
+    ('Confirmed', 'Confirmed'),
+    ('Rejected', 'Rejected'),
+    ('Expired', 'Expired'),
+)
+
+
 # class for the booking model
 class Booking(models.Model):
     booking_id = models.AutoField(primary_key=True)
     created_on = models.DateTimeField(auto_now_add=True)
     booking_date = models.DateField()
-    booking_time = models.CharField(max_length=25, choices=time_slots)
+    booking_time = models.CharField(max_length=25, choices=booking_slots)
     table = models.ForeignKey(
         Table,
         on_delete=models.CASCADE,
-        related_name="table_reserved",
+        related_name="table_booked",
         null=True
     )
     user = models.ForeignKey(
@@ -26,8 +50,8 @@ class Booking(models.Model):
     phone = PhoneNumberField(null=True)
     status = models.CharField(
         max_length=25,
-        choices=status_options,
-        default='awaiting confirmation'
+        choices=booking_status,
+        default='pending'
     )
     seats = (
         (1, "1 Guest"),
