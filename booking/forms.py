@@ -22,6 +22,5 @@ class BookingForm(forms.ModelForm):
             'phone',
             'email',
             'party_of',
-            'table',
             'booking_date',
             'booking_time')
