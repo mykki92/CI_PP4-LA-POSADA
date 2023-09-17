@@ -33,12 +33,6 @@ class Booking(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     booking_date = models.DateField()
     booking_time = models.CharField(max_length=25, choices=booking_slots)
-    table = models.ForeignKey(
-        Table,
-        on_delete=models.CASCADE,
-        related_name="table_booked",
-        null=True
-    )
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
