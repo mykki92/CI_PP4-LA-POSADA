@@ -27,12 +27,31 @@ booking_status = (
 )
 
 
-# class for the booking model
+# class for the database table model
+class Table(models.Model):
+    table_id = models.AutoField(primary_key=True)
+    table_number = models.IntegerField(default=0, unique=True)
+    seats = models.IntegerField(default=2)
+
+    class Meta:
+        ordering = ['-max_seats']
+
+    def __str__(self):
+        return self.table_name
+
+
+# class for the database booking model
 class Booking(models.Model):
     booking_id = models.AutoField(primary_key=True)
     created_on = models.DateTimeField(auto_now_add=True)
     booking_date = models.DateField()
     booking_time = models.CharField(max_length=25, choices=booking_slots)
+    table = models.ForeignKey(
+        Table,
+        on_delete=models.CASCADE,
+        related_name="table_booked",
+        null=True
+    )
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
@@ -61,7 +80,7 @@ class Booking(models.Model):
 
     class Meta:
         ordering = ['-booking_time']
-        unique_together = ('booking_date', 'booking_time')
+        unique_together = ('booking_date', 'booking_time', 'table')
 
     def __str__(self):
         return self.status
