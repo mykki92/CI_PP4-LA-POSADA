@@ -32,13 +32,13 @@ class BookingAdmin(admin.ModelAdmin):
         'party_of',
         'status',
         'table',
-        'requested_date',
-        'requested_time',
-        'created_date')
+        'booking_date',
+        'booking_time',
+        'created_on')
 
     search_fields = ['guest__name']
     list_filter = (('requested_date', DateRangeFilter),)
-    actions = ['confirm_bookings']
+    actions = ['confirm_booking']
 
-    def confirm_bookings(self, request, queryset):
+    def confirm_booking(self, request, queryset):
         queryset.update(status='Booking Confirmed')
