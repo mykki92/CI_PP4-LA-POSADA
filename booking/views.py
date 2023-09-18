@@ -80,7 +80,7 @@ class ViewBookings(generic.ListView):
 
         for date in booking:
             if date.booking_date < today:
-                date.status = 'Booking Expired'
+                date.status = 'Expired'
 
         if request.user.is_authenticated:
             bookings = Booking.objects.filter(user=request.user)

@@ -11,7 +11,7 @@ urlpatterns = [
     ),
     path('view_bookings', views.ViewBookings.as_view(), name='view_bookings'),
     path(
-        'amend_booking',
+        'amend_booking/<int:pk>',
         views.AmendBooking.as_view(),
         name='amend_booking'
     ),
