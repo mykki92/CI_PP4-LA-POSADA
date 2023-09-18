@@ -13,7 +13,7 @@ class ContactForm(forms.ModelForm):
     phone = PhoneNumberField(widget=forms.TextInput())
 
     class Meta:
-        model = Contact
+        model = ContactUs
         fields = (
             'name',
             'phone',
