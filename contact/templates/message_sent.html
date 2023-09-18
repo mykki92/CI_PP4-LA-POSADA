@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-8 mt-5 mb-5">
+            <h2 class="text-center">Message Sent!</h2>
+            <hr>
+            <p class="text-center">That's in the post, you'll hear from us soon!</p><br>
+            <h5 class="text-center"><a href="{% url 'home' %}" class="booking-success-button">Home</a></h5>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
