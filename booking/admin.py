@@ -23,7 +23,7 @@ class BookingAdmin(admin.ModelAdmin):
         'booking_date',
         'booking_time',
         'created_on'
-        )
+    )
     list_display = (
         'booking_id',
         'user',
@@ -34,7 +34,8 @@ class BookingAdmin(admin.ModelAdmin):
         'table',
         'booking_date',
         'booking_time',
-        'created_on')
+        'created_on'
+    )
 
     search_fields = ['guest__name']
     list_filter = (('booking_date', DateRangeFilter),)
