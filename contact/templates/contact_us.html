@@ -2,12 +2,81 @@
 
 {% load static %}
 
+{% load crispy_forms_tags %}
+
 {% block content %}
 
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
         <div class="col-sm-8 mt-5 mb-5">
             <h1 class="text-center">Contact Us</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 p-5 bg-darker rounded booking-card">
+                        <!-- Displays contact form if user is signed in-->
+                        {% if user.is_authenticated %}
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <h2 class="fw-bold mt-3">Send</h2>
+                                <hr>
+                            </div>
+                        </div>
+                        <form method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <!-- Contact form -->
+                            {{ contact_form| crispy }}
+
+                            <button class="btn btn-success" type="submit">Submit</button>
+                        </form>
+                        {% else %}
+                        <!-- Display if user is not logged in -->
+                        <p>Please sign in to contact</p>
+                        <button class="btn btn-success" type="submit">
+                            <a href="{% url 'account_login' %}">Sign In</a>
+                            </button>
+                        {% endif %}
+                        <!-- Handles form errors -->
+                        {% if contact_form.errors %}
+                        {% for field in contact_form %}
+                        {% for error in field.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endfor %}
+                        {% for error in contact_form.non_field_errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-6 mt-5 mb-5 p-5 bg-darker rounded">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <!-- Address & Opening Times -->
+                        <h3>Contact Details</h3>
+                        <hr>
+                    </div>
+                    <div class="col-12 rounded">
+                    <!-- Google map -->
+                    <h3>Google Map</h3>
+                    <hr>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
