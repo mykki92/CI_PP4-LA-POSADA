@@ -17,8 +17,7 @@ def get_user(request):
     return user
 
 
-# Class to display the booking form and update the database with successful
-# bookings
+# Class to display the booking form
 class MakeBooking(View):
     """
     Displays the booking form and auto fills the email field if the user
