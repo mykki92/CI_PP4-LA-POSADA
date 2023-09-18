@@ -8,7 +8,11 @@ urlpatterns = [
         'booking_confirmed',
         views.BookingConfirmed.as_view(),
         name='booking_confirmed'
-        ),
+    ),
     path('view_bookings', views.ViewBookings.as_view(), name='view_bookings'),
-    path('change_booking', views.EditBooking.as_view(), name='change_booking'),
+    path(
+        'amend_booking',
+        views.AmendBooking.as_view(),
+        name='amend_booking'
+    ),
 ]

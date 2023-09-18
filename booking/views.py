@@ -96,11 +96,11 @@ class ViewBookings(generic.ListView):
 
 
 # Class to display options to change an existing booking
-class ChangeBooking(SuccessMessageMixin, UpdateView):
+class AmendBooking(SuccessMessageMixin, UpdateView):
     model = Booking
     form_class = BookingForm
-    template_name = 'change_booking.html'
-    success_message = 'Booking has been changed.'
+    template_name = 'amend_booking.html'
+    success_message = 'Booking has been amended.'
 
-    def booking_changed(self, **kwargs):
+    def booking_amended(self, **kwargs):
         return reverse('view_bookings')
