@@ -49,14 +49,16 @@ class MakeBooking(View):
             booking.save()
             messages.success(
                 request, "Booking successful, awaiting confirmation")
+            return render(request, 'booking/booking_confirmed.html')
 
-        return render(request, 'make_booking.html',
-                      {'booking_form': booking_form})
+        return render(
+            request, 'make_booking.html', {'booking_form': booking_form}
+        )
 
 
 # Class to display booking confirmation
 class BookingConfirmed(generic.DetailView):
-    template_name = 'bookings/booking_confirmed.html'
+    template_name = 'booking/booking_confirmed.html'
 
     def get(self, request):
-        return render(request, 'bookings/booking_confirmed.html')
+        return render(request, 'booking/booking_confirmed.html')

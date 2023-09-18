@@ -30,13 +30,13 @@ booking_status = (
 # class for the database table model
 class Table(models.Model):
     table_id = models.AutoField(primary_key=True)
-    table_number = models.IntegerField(default=0, unique=True)
+    table_number = models.CharField(max_length=25, unique=True)
     seats = models.IntegerField(default=2)
 
     class Meta:
         ordering = ['-seats']
 
-    def __str__(self):
+    def ____(self):
         return self.table_number
 
 
