@@ -14,7 +14,7 @@ def get_user(request):
 
 # Class to display the contact form
 class UserMessage(View):
-    template_name = 'contact/contact_us.html'
+    template_name = 'contact_us.html'
     success_message = 'Your message has been sent.'
 
     def get(self, request, *args, **kwargs):
@@ -26,7 +26,7 @@ class UserMessage(View):
             contact_form = ContactForm(initial={'email': email})
         else:
             contact_form = ContactForm()
-        return render(request, 'contact/contact_us.html',
+        return render(request, 'contact_us.html',
                       {'contact_form': contact_form})
 
     def post(self, request):
@@ -41,8 +41,8 @@ class UserMessage(View):
             contact.user = request.user
             contact.save()
             messages.success(
-                request, "Ypur message has been sent")
+                request, "Your message has been sent")
             return render(request, '')
 
-        return render(request, 'contact/contact_us.html',
+        return render(request, 'contact_us.html',
                       {'contact_form': contact_form})
