@@ -3,7 +3,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 from django.contrib.auth.models import User
 
 
-# choices for booking times
+# Choices for booking times
 booking_slots = (
     ('12:00', '12:00'),
     ('13:00', '13:00'),
@@ -18,7 +18,7 @@ booking_slots = (
     ('22:00', '22:00'),
 )
 
-# booking status categories
+# Booking status categories
 booking_status = (
     ('Pending', 'Pending'),
     ('Confirmed', 'Confirmed'),
@@ -27,7 +27,7 @@ booking_status = (
 )
 
 
-# class for the database table model
+# Class for the database table model
 class Table(models.Model):
     table_id = models.AutoField(primary_key=True)
     table_number = models.CharField(max_length=25, unique=True)
@@ -40,7 +40,7 @@ class Table(models.Model):
         return self.table_number
 
 
-# class for the database booking model
+# Class for the database booking model
 class Booking(models.Model):
     booking_id = models.AutoField(primary_key=True)
     created_on = models.DateTimeField(auto_now_add=True)
