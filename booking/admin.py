@@ -38,7 +38,10 @@ class BookingAdmin(admin.ModelAdmin):
 
     search_fields = ['guest__name']
     list_filter = (('booking_date', DateRangeFilter),)
-    actions = ['confirm_booking']
+    actions = ['confirm_booking', 'reject_booking']
 
     def confirm_booking(self, request, queryset):
-        queryset.update(status='Booking Confirmed')
+        queryset.update(status='Confirmed')
+
+    def reject_booking(self, request, queryset):
+        queryset.update(status='Rejected')

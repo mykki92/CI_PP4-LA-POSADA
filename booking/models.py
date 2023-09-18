@@ -64,7 +64,7 @@ class Booking(models.Model):
     status = models.CharField(
         max_length=25,
         choices=booking_status,
-        default='pending'
+        default='Pending'
     )
     seats = (
         (1, "1 Guest"),
