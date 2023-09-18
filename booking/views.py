@@ -104,3 +104,16 @@ class AmendBooking(SuccessMessageMixin, UpdateView):
 
     def booking_amended(self, **kwargs):
         return reverse('view_bookings')
+
+
+# Function to deletes the selected booking by identifying its primary key
+def cancel_booking(request, pk):
+    booking = Booking.objects.get(pk=pk)
+
+    if request.method == 'POST':
+        booking.delete()
+        messages.success(request, "Booking cancelled")
+        return redirect('view_bookings')
+
+    return render(
+        request, 'bookings/cancel_booking.html', {'booking': booking})

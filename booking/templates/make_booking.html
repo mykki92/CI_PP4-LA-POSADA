@@ -10,6 +10,7 @@
     <div class="row d-flex justify-content-center">
         <div class="col-sm-8 mt-5 mb-5">
             <h1 class="text-center">Book A Table With Us!</h1>
+        </div>
     </div>
 </div>
 <div class="container">
@@ -29,7 +30,7 @@
                             {% csrf_token %}
                             <!-- links booking form -->
                             {{ booking_form| crispy }}
-
+                            <br>
                             <button class="btn btn-success" type="submit">Submit</button>
                         </form>
                         {% else %}
