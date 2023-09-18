@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, reverse, redirect
 from django.views import generic, View
 from django.contrib.auth.models import User
 from django.contrib import messages
@@ -106,7 +106,7 @@ class AmendBooking(SuccessMessageMixin, UpdateView):
         return reverse('view_bookings')
 
 
-# Function to deletes the selected booking by identifying its primary key
+# Function to delete the selected booking by identifying its primary key
 def cancel_booking(request, pk):
     booking = Booking.objects.get(pk=pk)
 
@@ -114,6 +114,6 @@ def cancel_booking(request, pk):
         booking.delete()
         messages.success(request, "Booking cancelled")
         return redirect('view_bookings')
-
-    return render(
-        request, 'bookings/cancel_booking.html', {'booking': booking})
+    else:
+        return render(
+            request, 'cancel_booking.html', {'booking': booking})
