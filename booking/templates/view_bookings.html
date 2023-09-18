@@ -7,8 +7,24 @@
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
         <div class="col-sm-8 mt-5 mb-5">
-            <h1 class="text-center">View Bookings</h1>
+            <h1>My Bookings:</h1><hr>
+            {% for booking in booking_page %}
+            <div class="col-md-5">
+                <div class="card mb-5">
+                    <div class="card-body bg-darker grow booking-card">
+                        <h2 class="card-title">{{ booking.name }}</h2>
+                        <p class="card-subtitle mb-2 text-muted">{{ booking.booking_date }} at
+                            {{ booking.booking_time }}</p><br>
+                        <p class="card-subtitle mb-2">Status: {{ booking.status }}.</p>
+                        <p class="card-text">Party Of: {{ booking.party_of }}.</p>
+                        <p class="card-text">Table: {{booking.table}}</p>
+                        <a href="" class="btn btn-success">Change</a>
+                        <a href="" class="btn btn-danger">Cancel</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
-</div>
 
 {% endblock %}
