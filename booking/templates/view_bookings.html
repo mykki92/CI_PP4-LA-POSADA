@@ -21,7 +21,7 @@
                         <p class="card-text">Party Of: {{ booking.party_of }}</p>
                         <p class="card-text">Table: {{booking.table}}</p>
                         <a href="{% url 'amend_booking' booking.pk %}" class="btn btn-success">Amend</a>
-                        <a href="" class="btn btn-danger">Cancel</a>
+                        <a href="{% url 'cancel_booking' booking.pk %}" class="btn btn-danger">Cancel</a>
                     </div>
                 </div>
             </div>
