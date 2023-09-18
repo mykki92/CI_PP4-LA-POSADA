@@ -5,7 +5,7 @@ from booking import views
 urlpatterns = [
     path('make_booking', views.MakeBooking.as_view(), name='make_booking'),
     path(
-        'booking_confirmed/<int:pk>',
+        'booking_confirmed',
         views.BookingConfirmed.as_view(),
         name='booking_confirmed'
         ),
