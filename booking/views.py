@@ -79,14 +79,14 @@ class ViewBookings(generic.ListView):
         today = datetime.datetime.now().date()
 
         for date in booking:
-            if date.requested_date < today:
+            if date.booking_date < today:
                 date.status = 'Booking Expired'
 
         if request.user.is_authenticated:
             bookings = Booking.objects.filter(user=request.user)
             return render(
                 request,
-                'booking/view_bookings.html',
+                'view_bookings.html',
                 {
                     'booking': booking,
                     'bookings': bookings,
