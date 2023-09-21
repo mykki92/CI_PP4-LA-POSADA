@@ -7,7 +7,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12 mt-5 mb-5">
-            <h1 class="text-center">Blog</h1><hr>
+            <h1 class="text-center">La Posada Diarios</h1><hr>
         </div>
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
@@ -32,8 +32,11 @@
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
                             <hr />
-                            <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
-                                {{ post.likes_count }}</p>
+                            <p class="card-text text-muted h6">
+                                {{ post.created_on}} 
+                                <i class="far fa-heart"></i> {{ post.likes_count }} 
+                                <i class="far fa-comments"></i> {{ post.comments.count }}
+                            </p>
                         </div>
                     </div>
                 </div>
