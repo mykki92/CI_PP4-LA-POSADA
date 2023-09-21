@@ -24,7 +24,7 @@ class MakeBooking(View):
     is signed in
     """
     template_name = 'make_booking.html'
-    success_message = 'Thats in the diary, well see you soon!'
+    success_message = 'Its a date! Well see you soon!'
 
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
@@ -101,7 +101,7 @@ class AmendBooking(SuccessMessageMixin, UpdateView):
     template_name = 'amend_booking.html'
     success_message = 'Booking has been amended.'
 
-    def booking_amended(self, **kwargs):
+    def get_success_url(self, **kwargs):
         return reverse('view_bookings')
 
 
