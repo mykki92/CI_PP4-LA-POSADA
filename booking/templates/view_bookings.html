@@ -20,8 +20,12 @@
                         <p class="card-subtitle mb-2">Booking Status: {{ booking.status }}</p>
                         <p class="card-text">Party Of: {{ booking.party_of }}</p>
                         <p class="card-text">Table: {{booking.table}}</p>
+                        {% if booking.status == 'expired' %}
+                        <a href="#" class="btn btn-danger">Expired</a>
+                        {% else %}
                         <a href="{% url 'amend_booking' booking.pk %}" class="btn btn-success">Amend</a>
                         <a href="{% url 'cancel_booking' booking.pk %}" class="btn btn-danger">Cancel</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
