@@ -36,7 +36,7 @@ class Table(models.Model):
     class Meta:
         ordering = ['-seats']
 
-    def ____(self):
+    def __str__(self):
         return self.table_number
 
 
