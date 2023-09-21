@@ -27,7 +27,7 @@ booking_status = (
 )
 
 
-# Class for the database table model
+# Class for the table database model
 class Table(models.Model):
     table_id = models.AutoField(primary_key=True)
     table_number = models.CharField(max_length=25, unique=True)
@@ -40,7 +40,7 @@ class Table(models.Model):
         return self.table_number
 
 
-# Class for the database booking model
+# Class for the booking database model
 class Booking(models.Model):
     booking_id = models.AutoField(primary_key=True)
     created_on = models.DateTimeField(auto_now_add=True)

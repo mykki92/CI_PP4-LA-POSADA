@@ -5,7 +5,7 @@ TAPAS_CATEGORY = ((0, 'Salads & Cold Cuts'), (1, 'Hot Dishes'), (2, 'Sides'))
 DRINK_CATEGORY = ((0, 'Beers'), (1, 'Wines'), (2, 'Cocktails'))
 
 
-# Model for tapas menu items
+# Class for tapas menu item database model
 class TapasItem(models.Model):
     """
     a class for the tapas menu item model
@@ -25,7 +25,7 @@ class TapasItem(models.Model):
         return self.tapas_name
 
 
-# Model for drink menu items
+# Class for drink menu item database model
 class DrinkItem(models.Model):
     """
     a class for the drink menu item model

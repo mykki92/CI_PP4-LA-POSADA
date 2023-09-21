@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from phonenumber_field.modelfields import PhoneNumberField
 
 
-# Class for the database contact model
+# Class for the contact database model
 class ContactUs(models.Model):
     message_id = models.AutoField(primary_key=True)
     message_date = models.DateTimeField(auto_now_add=True)
