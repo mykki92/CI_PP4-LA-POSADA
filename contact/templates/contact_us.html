@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<div class="container-fluid mb-5">
+<div class="container-fluid mb-4">
     <div class="row d-flex justify-content-center">
         <div class="col-sm-8 mt-4 mb-3">
             <h1 class="text-center">Contact Us</h1>
@@ -15,13 +15,36 @@
     </div>
     <div class="row">
         <div class="col-md-6">
+            <!-- Embedded Google map -->
             <iframe class="w-90 ml-5"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.03920577570767!2d-0.13943534369289803!3d50.825354075411205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758575241219ab%3A0xc0dea4954e48f008!2s30%20North%20Rd%2C%20Brighton%20and%20Hove%2C%20Brighton%20BN1%201YB!5e0!3m2!1sen!2suk!4v1695414696751!5m2!1sen!2suk" 
                 width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
+            <br>
+            <hr>
+            <br>
+            <!-- Contact details -->
+            <div class="row row-cols-3">
+                <div class="text-center">
+                    <h4><i class="fas fa-door-open"></i></h4>
+                    <p>Monday-Sunday:</p>
+                    <p>12:00-23:00</p>
+                </div>
+                <div class="text-center">
+                    <h4><i class="fas fa-map-marker-alt"></i></h4>
+                    <p>30 North Rd</p>
+                    <p>Brighton BN1 1YB</p>
+                </div>
+                <div class="text-center">
+                    <h4><i class="fas fa-phone"></i></h4>
+                    <p>01273 429580</p>
+                    <p>10:00-23:00</p>
+                </div>
+            </div>
         </div>
         <br />
         <div class="col-md-6">
+            <!-- Contact/login -->
             {% if user.is_authenticated %}
             <div class="row">
                 <div>
@@ -29,9 +52,9 @@
                     <hr>
                 </div>
             </div>
+            <!-- Contact form -->
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
-                <!-- Contact form -->
                 {{ contact_form| crispy }}
                 <button class="btn btn-success" type="submit">Submit</button>
             </form>
