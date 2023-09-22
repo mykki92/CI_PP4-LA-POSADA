@@ -5,47 +5,48 @@
 {% block content %}
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 mt-5 mb-5">
-            <h1 class="text-center">La Posada Diarios</h1><hr>
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-8 mt-4 mb-3">
+            <h1 class="text-center">La Posada Diarios</h1>
+            <hr>
         </div>
-        <!-- Blog Entries Column -->
-        <div class="col-12 mt-3 left">
-            <div class="row">
-                {% for post in post_list %}
-                <div class="col-md-6">
-                    <div class="card mb-6">
-                        <div class="card-body">
-                            <div class="image-container">
-                                {% if "placeholder" in post.image.url %}
-                                <img class="card-img-top"
-                                    src="">
-                                {% else %}
-                                <img class="card-img-top" src=" {{ post.image.url }}">
-                                {% endif %}
-                                <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
-                                </div>
+    </div>
+    <!-- Blog Entries Column -->
+    <div class="col-12 mt-3 left">
+        <div class="row">
+            {% for post in post_list %}
+            <div class="col-md-6">
+                <div class="card mb-6">
+                    <div class="card-body">
+                        <div class="image-container">
+                            {% if "placeholder" in post.image.url %}
+                            <img class="card-img-top"
+                                src="">
+                            {% else %}
+                            <img class="card-img-top" src=" {{ post.image.url }}">
+                            {% endif %}
+                            <div class="image-flash">
+                                <p class="author">Author: {{ post.author }}</p>
                             </div>
-                            <a href="{% url 'blog_detail' post.slug  %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
-                                <p class="card-text">{{ post.excerpt }}</p>
-                            </a>
-                            <hr />
-                            <p class="card-text text-muted h6">
-                                {{ post.created_on}} 
-                                <i class="far fa-heart"></i> {{ post.likes_count }} 
-                                <i class="far fa-comments"></i> {{ post.comments.count }}
-                            </p>
                         </div>
+                        <a href="{% url 'blog_detail' post.slug  %}" class="post-link">
+                            <h2 class="card-title">{{ post.title }}</h2>
+                            <p class="card-text">{{ post.excerpt }}</p>
+                        </a>
+                        <hr>
+                        <p class="card-text text-muted h6">
+                            {{ post.created_on}} 
+                            <i class="far fa-heart"></i> {{ post.likes_count }} 
+                            <i class="far fa-comments"></i> {{ post.comments.count }}
+                        </p>
                     </div>
-                    <br>
                 </div>
-                {% if forloop.counter|divisibleby:2 %}
+                <br>
             </div>
-            {% endif %}
-            {% endfor %}
+            {% if forloop.counter|divisibleby:2 %}
         </div>
+        {% endif %}
+        {% endfor %}
     </div>
     {% if is_paginated %}
     <nav aria-label="Page navigation">
