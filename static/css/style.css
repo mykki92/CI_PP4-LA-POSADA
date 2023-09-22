@@ -23,10 +23,5 @@ body {
     background-color: #212529;
     color: #fff;
     border: none;
-}
-.contact-sign-in {
-    color: #fff
-}
-.contact-sign-in:hover {
-    color: #fff
+    text-decoration: underline;
 }
