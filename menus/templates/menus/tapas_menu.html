@@ -4,50 +4,69 @@
 
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
-        <div class="col-sm-8 mt-5 mb-5">
+        <div class="col-sm-8 mt-3 mb-2">
             <h1 class="text-center">Tapas Menu</h1>
         </div>
     </div>
-</div>
-<div class="row justify-content-center">
-    <!-- Salads & Cold Cuts Items-->
-    <div class="col-sm-8">
-        <hr><h2>Salads & Cold Cuts</h2><hr>
-        {% for item in tapas_list %}
-        {% if item.tapas_type == 0 %}
-        <h5>{{ item.tapas_name }}</h5>
-        {{ item.description | safe }} 
-        <p>TAPAS: £{{ item.tapas_price }}0 PLATO: £{{ item.plato_price }}0</p>
-        <br>
-        {% endif %}
-        {% endfor %}
+    <div class="row justify-content-center">
+        <!-- Salads & Cold Cuts Items-->
+        <div class="col-sm-8">
+            <hr>
+            <h2 class="col text-center">Salads & Cold Cuts</h2>
+            <hr>
+            <div class="row row-cols-2">
+                {% for item in tapas_list %}
+                {% if item.tapas_type == 0 %}
+                <div>
+                    <h5>{{ item.tapas_name }}</h5>
+                    {{ item.description | safe }} 
+                    <p>TAPAS: £{{ item.tapas_price }}0 PLATO: £{{ item.plato_price }}0</p>
+                    <br>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Hot Dishes Items-->
+        <div class="col-sm-8">
+            <hr>
+            <h2 class="col text-center">Hot Dishes</h2>
+            <hr>
+            <div class="row row-cols-2">
+                {% for item in tapas_list %}
+                {% if item.tapas_type == 1 %}
+                <div>
+                    <h5>{{ item.tapas_name }}</h5>
+                    {{ item.description | safe }}
+                    <p>TAPAS: £{{ item.tapas_price }}0 PLATO: £{{ item.plato_price }}0</p>
+                    <br>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Sides Items-->
+        <div class="col-sm-8">
+            <hr>
+            <h2 class="col text-center">Sides</h2>
+            <hr>
+            <div class="row row-cols-3">
+                {% for item in tapas_list %}
+                {% if item.tapas_type == 2 %}
+                <div class="text-center">
+                    <h5>{{ item.tapas_name }}</h5>
+                    <p>£{{ item.sides_price }}0</p>
+                    <br>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>
-<div class="row justify-content-center">
-    <!-- Hot Dishes Items-->
-    <div class="col-sm-8">
-        <hr><h2>Hot Dishes</h2><hr>
-        {% for item in tapas_list %}
-        {% if item.tapas_type == 1 %}
-        <h5>{{ item.tapas_name }}</h5>
-        {{ item.description | safe }}
-        <p>TAPAS: £{{ item.tapas_price }}0 PLATO: £{{ item.plato_price }}0</p>
-        <br>
-        {% endif %}
-        {% endfor %}
-    </div>
-</div>
-<div class="row justify-content-center">
-    <!-- Sides Items-->
-    <div class="col-sm-8">
-        <hr><h2>Sides</h2><hr>
-        {% for item in tapas_list %}
-        {% if item.tapas_type == 2 %}
-        <h5>{{ item.tapas_name }}</h5>
-        <p>£{{ item.sides_price }}0</p>
-        <br>
-        {% endif %}
-        {% endfor %}
-    </div>
-</div>
+
 {%endblock%}
