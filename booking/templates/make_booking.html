@@ -8,54 +8,52 @@
 
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
-        <div class="col-sm-8 mt-5 mb-5">
+        <div class="col-sm-8 mt-4 mb-3">
             <h1 class="text-center">Book A Table With Us!</h1>
+            <hr>
         </div>
     </div>
-</div>
-<div class="container">
-    <div class="row justify-content-center mt-3">
-        <div class="col-md-6">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-12 p-5 bg-darker rounded booking-card">
-                        <!-- Displays booking form if user is signed in-->
-                        {% if user.is_authenticated %}
-                        <div class="row text-center">
-                            <div class="col-12">
-                                <h5 class="fw-bold mt-3">Your Booking</h5>
-                            </div>
-                        </div>
-                        <form method="POST" enctype="multipart/form-data">
-                            {% csrf_token %}
-                            <!-- links booking form -->
-                            {{ booking_form| crispy }}
-                            <br>
-                            <button class="btn btn-success" type="submit">Submit</button>
-                        </form>
-                        {% else %}
-                        <!-- Displays link to sign in if user is not authenticated -->
-                        <h3>Please sign in to book a table</h3>
-                        <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
-                                Page</a></button>
-                        {% endif %}
-                        <!-- Handles form errors -->
-                        {% if booking_form.errors %}
-                        {% for field in booking_form %}
-                        {% for error in field.errors %}
-                            <div class="alert alert-danger">
-                                <strong>{{ error|escape }}</strong>
-                            </div>
-                        {% endfor %}
-                        {% endfor %}
-                        {% for error in booking_form.non_field_errors %}
-                            <div class="alert alert-danger">
-                                <strong>{{ error|escape }}</strong>
-                            </div>
-                        {% endfor %}
-                        {% endif %}
+    <div class="col-md-12 text-center">
+        <div class="row">
+            <div class="col-12 p-5 bg-darker rounded booking-card">
+                <!-- Displays booking form if user is signed in-->
+                {% if user.is_authenticated %}
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h5 class="fw-bold">Your Booking</h5>
                     </div>
                 </div>
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <!-- links booking form -->
+                    {{ booking_form| crispy }}
+                    <br>
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </form>
+                {% else %}
+                <!-- Displays link to sign in if user is not authenticated -->
+                <h3>Please sign in to book a table</h3>
+                <button class="btn btn-success" type="submit">
+                    <a href="{% url 'account_login' %}">Go to Login Page</a>
+                </button>
+                {% endif %}
+                <!-- Handles form errors -->
+                {% if booking_form.errors %}
+                {% for field in booking_form %}
+                {% for error in field.errors %}
+                    <div class="alert alert-danger">
+                        <strong>{{ error|escape }}</strong>
+                    </div>
+                {% endfor %}
+                {% endfor %}
+                {% for error in booking_form.non_field_errors %}
+                    <div class="alert alert-danger">
+                        <strong>{{ error|escape }}</strong>
+                    </div>
+                {% endfor %}
+                {% endif %}
+                <br>
+                <hr>
             </div>
         </div>
     </div>
