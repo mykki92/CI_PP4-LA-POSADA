@@ -6,79 +6,63 @@
 
 {% block content %}
 
-<div class="container-fluid">
+<div class="container-fluid mb-5">
     <div class="row d-flex justify-content-center">
-        <div class="col-sm-8 mt-5 mb-5">
+        <div class="col-sm-8 mt-4 mb-3">
             <h1 class="text-center">Contact Us</h1>
+            <hr>
         </div>
     </div>
-</div>
-<div class="container">
-    <div class="row justify-content-center mt-5">
+    <div class="row">
         <div class="col-md-6">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-12 p-5 bg-darker rounded booking-card">
-                        <!-- Displays contact form if user is signed in-->
-                        {% if user.is_authenticated %}
-                        <div class="row text-center">
-                            <div class="col-12">
-                                <h4 class="fw-bold mt-3">Your  Message</h4>
-                                <hr>
-                            </div>
-                        </div>
-                        <form method="POST" enctype="multipart/form-data">
-                            {% csrf_token %}
-                            <!-- Contact form -->
-                            {{ contact_form| crispy }}
-
-                            <button class="btn btn-success" type="submit">Submit</button>
-                        </form>
-                        {% else %}
-                        <!-- Display if user is not logged in -->
-                        <p>Please sign in to contact</p>
-                        <button class="btn btn-success" type="submit">
-                            <a href="{% url 'account_login' %}">Sign In</a>
-                            </button>
-                        {% endif %}
-                        <!-- Handles form errors -->
-                        {% if contact_form.errors %}
-                        {% for field in contact_form %}
-                        {% for error in field.errors %}
-                        <div class="alert alert-danger">
-                            <strong>{{ error|escape }}</strong>
-                        </div>
-                        {% endfor %}
-                        {% endfor %}
-                        {% for error in contact_form.non_field_errors %}
-                        <div class="alert alert-danger">
-                            <strong>{{ error|escape }}</strong>
-                        </div>
-                        {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
+            <iframe class="w-90 ml-5"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.03920577570767!2d-0.13943534369289803!3d50.825354075411205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758575241219ab%3A0xc0dea4954e48f008!2s30%20North%20Rd%2C%20Brighton%20and%20Hove%2C%20Brighton%20BN1%201YB!5e0!3m2!1sen!2suk!4v1695414696751!5m2!1sen!2suk" 
+                width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
-    </div>
-    <div class="row justify-content-center mt-3">
-        <div class="col-md-6 mt-5 mb-5 p-5 bg-darker rounded">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col">
-                        <!-- Address & Opening Times -->
-                        <h3>Contact Details</h3>
-                        <hr>
-                    </div>
-                    <div class="col-12 rounded">
-                    <!-- Google map -->
-                    <h3>Google Map</h3>
+        <br />
+        <div class="col-md-6">
+            {% if user.is_authenticated %}
+            <div class="row">
+                <div>
+                    <h5 class="fw-bold mt-2">We'd love to hear your feedback:</h5>
                     <hr>
-                    </div>
                 </div>
             </div>
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <!-- Contact form -->
+                {{ contact_form| crispy }}
+                <button class="btn btn-success" type="submit">Submit</button>
+            </form>
+            {% else %}
+            <!-- Display if user is not logged in -->
+            <p>Please sign in to contact</p>
+            <button class="btn btn-success" type="submit">
+                <a href="{% url 'account_login' %}">Sign In</a>
+            </button>
+            {% endif %}
+            <!-- Handles form errors -->
+            {% if contact_form.errors %}
+            {% for field in contact_form %}
+            {% for error in field.errors %}
+            <div class="alert alert-danger">
+                <strong>{{ error|escape }}</strong>
+            </div>
+            {% endfor %}
+            {% endfor %}
+            {% for error in contact_form.non_field_errors %}
+            <div class="alert alert-danger">
+                <strong>{{ error|escape }}</strong>
+            </div>
+            {% endfor %}
+            {% endif %}
         </div>
     </div>
+    <br>
+    <hr>
 </div>
 
 {% endblock %}
+
+
