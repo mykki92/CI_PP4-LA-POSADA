@@ -7,6 +7,9 @@ body {
     color: #212529;
 }
 
-.navbar-brand {
+.nav-link {
+    color: #fff;
+}
+.nav-link:hover {
     color: #C80309;
 }
