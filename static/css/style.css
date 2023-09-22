@@ -13,3 +13,20 @@ body {
 .nav-link:hover {
     color: #C80309;
 }
+
+.btn-success {
+    background-color: #212529;
+    color: #fff;
+    border: none;
+}
+.btn-success:hover {
+    background-color: #212529;
+    color: #fff;
+    border: none;
+}
+.contact-sign-in {
+    color: #fff
+}
+.contact-sign-in:hover {
+    color: #fff
+}
