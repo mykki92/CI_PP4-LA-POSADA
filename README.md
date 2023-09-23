@@ -209,6 +209,27 @@ The ContactUs Model contains the following:
 ### Manual Testing
 
 ### Automated Testing
+- Testing was done using the built in Django module, unittest.
+
+<details><summary>Menu App, test_models.py</summary>
+<img src="docs/testing/unittest_menus_test_models.png" alt="A screenshot of menu app models testing">
+</details>
+
+<details><summary>Menu App, test_views.py</summary>
+<img src="docs/testing/unittest_menus_test_views.png" alt="A screenshot of menu app views testing">
+</details>
+
+<details><summary>Menu App, test_urls.py</summary>
+<img src="docs/testing/unittest_menus_test_urls.png" alt="A screenshot of menu app urls testing">
+</details>
+
+<details><summary>Booking App, test_models.py</summary>
+<img src="docs/testing/unittest_booking_test_models.png" alt="A screenshot of booking app models testing">
+</details>
+
+<details><summary>Booking App, test_urls.py</summary>
+<img src="docs/testing/unittest_booking_test_urls.png" alt="A screenshot of booking app urls testing">
+</details>
 
 ### Device Testing & Browser Compatibility
 
