@@ -66,7 +66,7 @@ class BookingConfirmed(generic.DetailView):
 # Class to display a users current and past bookings
 class ViewBookings(generic.ListView):
     model = Booking
-    queryset = Booking.objects.filter().order_by('-created_on')
+    queryset = Booking.objects.filter().order_by('booking_date')
     template_name = 'view_bookings.html'
     paginated_by = 4
 
