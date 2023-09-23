@@ -23,14 +23,6 @@ Developed by Michael Roberts
     * [Structure](#structure)
         * [Website pages](#website-pages)
         * [Database](#database)
-            * [User Model](user-model)
-            * [TapasItem Model](tapasitem-model)
-            * [DrinkItem Model](drinkitem-model)
-            * [Table Model](table-model)
-            * [Booking Model](booking-model)
-            * [Post Model](post-model)
-            * [Comment Model](comment-model)
-            * [ContactUs Model](contactus-model)
     * [Wireframes](#wireframes)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
@@ -73,6 +65,101 @@ Developed by Michael Roberts
 #### Website Pages
 
 #### Database
+Built with Python and the Django framework with a Postgres database for the deployed Heroku app.
+##### User Model
+The User Model contains the following:
+- user_id
+- password
+- last_login
+- is_superuser
+- username
+- first_name
+- last_name
+- email
+- is_staff
+- is_active
+- date_joined
+
+
+##### TapasItem Model
+The TapasItem Model contains the following:
+- tapas_id
+- tapas_name
+- description
+- tapas_price
+- plato_price
+- sides_price
+- tapas_type
+
+
+##### DrinkItem Model
+The DrinkItem Model contains the following:
+- drink_id
+- drink_name
+- description
+- price
+- drink_type
+
+
+##### Table Model
+The Table Model contains the following:
+- table_id (PrimaryKey)
+- table_number
+- seats
+
+
+
+
+##### Booking Model
+The Booking Model contains the following:
+- booking_id (PrimaryKey)
+- created_on
+- booking_date
+- booking_time
+- table (ForeignKey)
+- user (ForeignKey)
+- name
+- email
+- phone
+- status
+- seats
+- party_of
+
+
+##### Post Model
+The Post Model contains the following:
+- title
+- slug
+- post_id (PrimaryKey)
+- author (ForeignKey)
+- created_on
+- updated_on
+- content
+- image
+- excerpt
+- status
+- likes
+
+
+##### Comment Model
+The Comment Model contains the following:
+- post (ForeignKey)
+- name
+- email
+- body
+- created_on
+- approved
+
+
+##### ContactUs Model
+The ContactUs Model contains the following:
+- message_id (PrimaryKey)
+- message_date
+- user (ForeignKey)
+- name
+- email
+- phone
+- message
 
 ### Wireframes
 
