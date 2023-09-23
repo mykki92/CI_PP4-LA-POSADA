@@ -80,7 +80,6 @@ The User Model contains the following:
 - is_active
 - date_joined
 
-
 ##### TapasItem Model
 The TapasItem Model contains the following:
 - tapas_id
@@ -91,7 +90,6 @@ The TapasItem Model contains the following:
 - sides_price
 - tapas_type
 
-
 ##### DrinkItem Model
 The DrinkItem Model contains the following:
 - drink_id
@@ -100,15 +98,11 @@ The DrinkItem Model contains the following:
 - price
 - drink_type
 
-
 ##### Table Model
 The Table Model contains the following:
 - table_id (PrimaryKey)
 - table_number
 - seats
-
-
-
 
 ##### Booking Model
 The Booking Model contains the following:
@@ -125,7 +119,6 @@ The Booking Model contains the following:
 - seats
 - party_of
 
-
 ##### Post Model
 The Post Model contains the following:
 - title
@@ -140,7 +133,6 @@ The Post Model contains the following:
 - status
 - likes
 
-
 ##### Comment Model
 The Comment Model contains the following:
 - post (ForeignKey)
@@ -149,7 +141,6 @@ The Comment Model contains the following:
 - body
 - created_on
 - approved
-
 
 ##### ContactUs Model
 The ContactUs Model contains the following:
