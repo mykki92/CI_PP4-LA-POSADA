@@ -15,7 +15,7 @@ class TestModels(TestCase):
             booking_id=32,
             table=self.table,
             user=self.user,
-            party_of=2,
+            party_of=6,
             created_on='2023-12-12',
             booking_date='2023-12-12',
             booking_time='12:00',
