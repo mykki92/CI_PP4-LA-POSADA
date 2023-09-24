@@ -4,48 +4,88 @@
 
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
-        <div class="col-sm-8 mt-5 mb-5">
-            <h1 class="text-center">Drink Menu</h1>
+        <div class="col-sm-8 mt-4 mb-3">
+            <h1 class="text-center">Drinks Menu</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Beers & Ciders Drink Items-->
+        <div class="col-sm-8">
+            <hr>
+            <h2 class="col text-center">Beers & Ciders</h2>
+            <hr>
+            <div class="row row-cols-2">
+                {% for drink in drink_list %}
+                {% if drink.drink_type == 0 %}
+                <div>
+                    <h5>{{ drink.drink_name }}</h5>
+                    <p>£{{ drink.price }}0</p>
+                    <br>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Wines & Sparkling Drink Items-->
+        <div class="col-sm-8">
+            <hr>
+            <h2 class="col text-center">Wines & Sparkling</h2>
+            <hr>
+            <div class="row row-cols-2">
+                {% for drink in drink_list %}
+                {% if drink.drink_type == 1 %}
+                <div>
+                    <h5>{{ drink.drink_name }}</h5>
+                    <p>GLASS: £{{ item.glass_price }}0 BOTTLE: £{{ item.bottle_price }}0</p>
+                    <br>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Cocktail Drink Items-->
+        <div class="col-sm-8">
+            <hr>
+            <h2 class="col text-center">Cocktails</h2>
+            <hr>
+            <div class="row row-cols-2">
+                {% for drink in drink_list %}
+                {% if drink.drink_type == 2 %}
+                <div>
+                    <h5>{{ drink.drink_name }}</h5>
+                    <p>£{{ drink.price }}0</p>
+                    <br>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Spirits Drink Items-->
+        <div class="col-sm-8">
+            <hr>
+            <h2 class="col text-center">Spirits</h2>
+            <hr>
+            <div class="row row-cols-2">
+                {% for drink in drink_list %}
+                {% if drink.drink_type == 3 %}
+                <div>
+                    <h5>{{ drink.drink_name }}</h5>
+                    <p>£{{ drink.price }}0</p>
+                    <br>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <hr>
+            <br>
         </div>
     </div>
 </div>
-<div class="row justify-content-center">
-    <!-- Beer Drink Items-->
-    <div class="col-sm-8">
-        <hr><h2>Beers</h2><hr>
-        {% for drink in drink_list %}
-        {% if drink.drink_type == 0 %}
-        <h5>{{ drink.drink_name }}</h5>
-        <p>£{{ drink.price }}0</p>
-        <br>
-        {% endif %}
-        {% endfor %}
-    </div>
-</div>
-<div class="row justify-content-center">
-    <!-- Wine Drink Items-->
-    <div class="col-sm-8">
-        <hr><h2>Wines</h2><hr>
-        {% for drink in drink_list %}
-        {% if drink.drink_type == 1 %}
-        <h5>{{ drink.drink_name }}</h5>
-        <p>£{{ drink.price }}0</p>
-        <br>
-        {% endif %}
-        {% endfor %}
-    </div>
-</div>
-<div class="row justify-content-center">
-    <!-- Cocktail Drink Items-->
-    <div class="col-sm-8">
-        <hr><h2>Cocktails</h2><hr>
-        {% for drink in drink_list %}
-        {% if drink.drink_type == 2 %}
-        <h5>{{ drink.drink_name }}</h5>
-        <p>£{{ drink.price }}0</p>
-        <br>
-        {% endif %}
-        {% endfor %}
-    </div>
-</div>
+
 {%endblock%}
