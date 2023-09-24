@@ -4,19 +4,18 @@
 
 {% block content %}
 
-<div class="container-fluid">
+<div class="container-fluid text-center">
     <div class="row d-flex justify-content-center">
-        <div class="col-sm-8 mt-5 mb-5">
+        <div class="col-sm-8 mt-4 mb-3">
             <h1 class="text-center">Cancel Booking</h1>
+            <hr>
         </div>
     </div>
-</div>
-<hr>
-<div class="container">
-    <div class="row justify-content-center mt-3">
+    <div class="row justify-content-center">
         <div class="col-md-5">
-            <h2>Are you sure you want to cancel this booking?:</h2>
-            <div class="card mb-5">
+            <h5>Are you sure you want to cancel this booking?:</h5>
+            <br>
+            <div class="card">
                 <div class="card-body">
                     <h3 class="card-title">{{ booking.name }}</h3>
                     <p class="card-subtitle mb-2 text-muted">{{ booking.booking_date }} at
@@ -26,13 +25,16 @@
                     <p class="card-text">Table: {{booking.table}}</p>
                     <form method="POST">
                         {% csrf_token %}
-                        <button class="btn btn-danger" type="submit">YES</button>
+                        <button class="btn btn-danger" type="submit">Cancel</button>
                         <a href="{% url 'view_bookings' %}" class="btn btn-secondary">Back</a>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <br>
+    <hr>
+    <br>
 </div>
 
 {% endblock %}
