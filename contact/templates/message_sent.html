@@ -4,15 +4,24 @@
 
 {% block content %}
 
-<div class="container-fluid">
+<div class="container-fluid text-center">
     <div class="row d-flex justify-content-center">
-        <div class="col-sm-8 mt-5 mb-5">
-            <h2 class="text-center">Message Sent!</h2>
+        <div class="col-sm-8 mt-4 mb-3">
+            <h1>Message Sent</h1>
             <hr>
-            <p class="text-center">That's in the post, you'll hear from us soon!</p><br>
-            <h5 class="text-center"><a href="{% url 'home' %}" class="booking-success-button">Home</a></h5>
+            <br>
+            <p>That's on its way!</p>
+            <br>
+            <p>You'll hear from us soon!</p>
+            <br>
+            <h5>
+                <a href="{% url 'contact_us' %}" class="booking-success-button">Back</a>
+            </h5>
         </div>
     </div>
+    <br>
+    <hr>
+    <br>
 </div>
 
 {% endblock %}
