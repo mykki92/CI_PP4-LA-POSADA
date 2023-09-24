@@ -9,13 +9,13 @@
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
-            <div class="col-md-6 masthead-text">
+            <div class="col-md-6 masthead-text mt-5">
                 <h1 class="post-title">{{ post.title }}</h1>
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 {% if "placeholder" in post.image.url %}
-                <img src="" width="100%">
+                <img src="/static/images/logo.png" width="100%">
                 {% else %}
                 <img src=" {{ post.image.url }}" width="100%">
                 {% endif %}
@@ -108,6 +108,8 @@
             </div>
         </div>
     </div>
+    <hr>
+    <br>
 </div>
 
 {% endblock content %}
