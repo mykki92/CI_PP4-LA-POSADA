@@ -88,6 +88,7 @@ The TapasItem Model contains the following:
 - tapas_price
 - plato_price
 - sides_price
+- dessert_price
 - tapas_type
 
 ##### DrinkItem Model
@@ -95,7 +96,9 @@ The DrinkItem Model contains the following:
 - drink_id
 - drink_name
 - description
-- price
+- glass_price
+- bottle_price
+- drink_price
 - drink_type
 
 ##### Table Model
