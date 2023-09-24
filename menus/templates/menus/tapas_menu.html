@@ -65,6 +65,26 @@
                 {% endif %}
                 {% endfor %}
             </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Desserts Items-->
+        <div class="col-sm-8">
+            <hr>
+            <h2 class="col text-center">Desserts</h2>
+            <hr>
+            <div class="row row-cols-2">
+                {% for item in tapas_list %}
+                {% if item.tapas_type == 3 %}
+                <div>
+                    <h5>{{ item.tapas_name }}</h5>
+                    {{ item.description | safe }} 
+                    <p>£{{ item.dessert_price }}0</p>
+                    <br>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
             <hr>
             <br>
         </div>

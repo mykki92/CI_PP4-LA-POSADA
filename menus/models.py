@@ -1,8 +1,12 @@
 from django.db import models
 
 # Food and drink categories
-TAPAS_CATEGORY = ((0, 'Salads & Cold Cuts'), (1, 'Hot Dishes'), (2, 'Sides'))
-DRINK_CATEGORY = ((0, 'Beers'), (1, 'Wines'), (2, 'Cocktails'))
+TAPAS_CATEGORY = (
+    (0, 'Salads & Cold Cuts'), (1, 'Hot Dishes'), (2, 'Sides'), (3, 'Desserts')
+)
+DRINK_CATEGORY = (
+    (0, 'Beers & Ciders'), (1, 'Wines'), (2, 'Cocktails'), (3, 'Spirits')
+)
 
 
 # Class for tapas menu item database model
@@ -16,6 +20,7 @@ class TapasItem(models.Model):
     tapas_price = models.FloatField(default=0)
     plato_price = models.FloatField(default=0)
     sides_price = models.FloatField(default=0)
+    dessert_price = models.FloatField(default=0)
     tapas_type = models.IntegerField(choices=TAPAS_CATEGORY)
 
     class Meta:
