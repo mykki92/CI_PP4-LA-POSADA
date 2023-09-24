@@ -11,7 +11,8 @@ body {
     color: #fff;
 }
 .nav-link:hover {
-    color: #C80309;
+    color: #fff;
+    text-decoration: underline;
 }
 
 .btn-success {
