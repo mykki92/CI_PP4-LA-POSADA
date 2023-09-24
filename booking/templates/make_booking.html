@@ -33,10 +33,15 @@
                 </form>
                 {% else %}
                 <!-- Displays link to sign in if user is not authenticated -->
-                <h3>Please sign in to book a table</h3>
-                <button class="btn btn-success" type="submit">
-                    <a href="{% url 'account_login' %}">Go to Login Page</a>
-                </button>
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h3>Please sign in to book a table</h3>
+                        <br>
+                        <button class="btn btn-success" type="submit">
+                            <a href="{% url 'account_login' %}">Go to Login Page</a>
+                        </button>
+                    </div>
+                </div>
                 {% endif %}
                 <!-- Handles form errors -->
                 {% if booking_form.errors %}
