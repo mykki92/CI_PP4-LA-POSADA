@@ -13,8 +13,9 @@
           <h1 class="text-center">Sign In</h1>
           <hr>
           <br>
-          <p>{% blocktrans %}If you have not created an account yet, then please
-          <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+          <p>{% blocktrans %}If you have not created an account yet, please
+            <a href="{{ signup_url }}">sign up</a> here.{% endblocktrans %}
+          </p>
       </div>
   </div>
   <form class="login" method="POST" action="{% url 'account_login' %}">
