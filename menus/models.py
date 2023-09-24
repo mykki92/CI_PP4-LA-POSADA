@@ -46,7 +46,7 @@ class DrinkItem(models.Model):
     description = models.CharField(max_length=200, blank=True)
     glass_price = models.FloatField(default=0)
     bottle_price = models.FloatField(default=0)
-    price = models.FloatField(default=0)
+    drink_price = models.FloatField(default=0)
     drink_type = models.IntegerField(choices=DRINK_CATEGORY,)
 
     class Meta:

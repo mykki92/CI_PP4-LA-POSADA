@@ -7,7 +7,12 @@ from .models import TapasItem, DrinkItem
 @admin.register(TapasItem)
 class TapasAdmin(SummernoteModelAdmin):
     list_display = (
-        'tapas_name', 'tapas_type', 'tapas_price', 'plato_price', 'sides_price'
+        'tapas_name',
+        'tapas_type',
+        'tapas_price',
+        'plato_price',
+        'sides_price',
+        'dessert_price'
         )
     search_fields = ('tapas_name', 'description')
     summernote_fields = ('description')
@@ -16,6 +21,12 @@ class TapasAdmin(SummernoteModelAdmin):
 # Registration of the drinks items for the admin panel
 @admin.register(DrinkItem)
 class DrinkAdmin(SummernoteModelAdmin):
-    list_display = ('drink_name', 'drink_type', 'price')
+    list_display = (
+        'drink_name',
+        'drink_type',
+        'drink_price',
+        'glass_price',
+        'bottle_price'
+        )
     search_fields = ('drink_name', 'description')
     summernote_fields = ('description')

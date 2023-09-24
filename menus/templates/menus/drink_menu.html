@@ -19,7 +19,7 @@
                 {% if drink.drink_type == 0 %}
                 <div>
                     <h5>{{ drink.drink_name }}</h5>
-                    <p>£{{ drink.price }}0</p>
+                    <p>£{{ drink.drink_price }}0</p>
                     <br>
                 </div>
                 {% endif %}
@@ -38,7 +38,7 @@
                 {% if drink.drink_type == 1 %}
                 <div>
                     <h5>{{ drink.drink_name }}</h5>
-                    <p>GLASS: £{{ item.glass_price }}0 BOTTLE: £{{ item.bottle_price }}0</p>
+                    <p>GLASS: £{{ drink.glass_price }}0 BOTTLE: £{{ drink.bottle_price }}0</p>
                     <br>
                 </div>
                 {% endif %}
@@ -57,7 +57,7 @@
                 {% if drink.drink_type == 2 %}
                 <div>
                     <h5>{{ drink.drink_name }}</h5>
-                    <p>£{{ drink.price }}0</p>
+                    <p>£{{ drink.drink_price }}0</p>
                     <br>
                 </div>
                 {% endif %}
@@ -76,7 +76,7 @@
                 {% if drink.drink_type == 3 %}
                 <div>
                     <h5>{{ drink.drink_name }}</h5>
-                    <p>£{{ drink.price }}0</p>
+                    <p>£{{ drink.drink_price }}0</p>
                     <br>
                 </div>
                 {% endif %}
