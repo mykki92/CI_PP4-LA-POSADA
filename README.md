@@ -42,6 +42,7 @@ Developed by Michael Roberts
 ## Project Goals
 ### User Goals
 
+
 ### Site Owner Goals
 
 ## User Experience
@@ -51,10 +52,31 @@ Developed by Michael Roberts
 
 ## User Stories
 ### User
+1.	As a user I want to know more about the restaurant and get a quick overview.
+2.	As a user I want to navigate through the sites pages easily to get more information.
+3.	As a user I want to view the opening hours and details on how to contact the restaurant via email, phone and socials.
+4.	As a user I want to be able to make a booking at the restaurant quickly and easily.
+5.	As a user I want to be able to change or cancel my booking without a long process.
+6.	As a user I want to be able to view all of my bookings, both active and expired.
+7. As a user I want to be see clear prompts and confirmation when making a booking or contacting the restaurant.
+8. As a user I want to create an account so I can make bookings and enquiries and interact with the restaurants blog page.
+9. As a user I want to view the site's blog for updates on the restaurant or related articles.
+10. As a user I want to view the food and drink menu before I decide to make a booking or not.
 
 ### Admin/Authorised User
+11.	As an admin/authorised user I want to be able to log in to the back end admin page.
+12.	As an admin/authorised user I want to be able to manually add or amend a booking. 
+13.	As an admin/authorised user I want to be able to confirm or reject bookings.
+14.	As an admin/authorised user I want to be able to add, edit or remove items from the menus.
+15.	As an admin/authorised user I want to be able to add, edit or remove blog posts.
+16.	As an admin/authorised user I want to be able to moderate blog post comments before approving them.
+17.	As an admin/authorised user I want to be able to search and filter through bookings, menus, blog posts and customer messages.
 
 ### Site Owner
+16.	As an site owner I want to provide a fully responsive site to ensure a good user experience for my customers and admin.
+16.	As an site owner I want validated data entered into my site so that to keep my databases accurate and efficient.
+16.	As an site owner I want to provide clearly presented contact and booking details to maximise customer interaction.
+
 
 ## Design
 ### Colours
