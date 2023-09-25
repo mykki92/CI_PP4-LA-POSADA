@@ -84,7 +84,7 @@ Developed by Michael Roberts
 14.	As an admin/authorised user I want to be able to add, edit or remove items from the menus.
 15.	As an admin/authorised user I want to be able to add, edit or remove blog posts.
 16.	As an admin/authorised user I want to be able to moderate blog post comments before approving them.
-17.	As an admin/authorised user I want to be able to search and filter through bookings, menus, blog posts and customer messages.
+17.	As an admin/authorised user I want to be able to search and filter through bookings, blog posts and customer messages.
 
 ### Site Owner
 18.	As an site owner I want to provide clearly presented contact and booking details to maximise customer interaction.
@@ -274,6 +274,7 @@ The ContactUs Model contains the following:
     <img src="docs/testing/user-story-testing-01-01.png">
     <img src="docs/testing/user-story-testing-01-02.png">
 </details>
+<hr>
 
 2.	As a user I want to navigate through the sites pages easily to get more information.
 
@@ -284,6 +285,7 @@ The ContactUs Model contains the following:
 <details><summary>Screenshots</summary>
     <img src="docs/testing/user-story-testing-02-01.png">
 </details>
+<hr>
 
 3. As a user I want to view the food and drink menu before I decide to make a booking or not.
 
@@ -294,6 +296,7 @@ The ContactUs Model contains the following:
 <details><summary>Screenshots</summary>
     <img src="">
 </details>
+<hr>
 
 4.	As a user I want to view the opening hours and details on how to contact the restaurant via email, phone and socials.
 
@@ -304,6 +307,7 @@ The ContactUs Model contains the following:
 <details><summary>Screenshots</summary>
     <img src="docs/testing/user-story-testing-04-01.png">
 </details>
+<hr>
 
 5. As a user I want to create an account so I can make bookings and enquiries and interact with the restaurants blog page.
 
@@ -314,6 +318,7 @@ The ContactUs Model contains the following:
 <details><summary>Screenshots</summary>
     <img src="docs/testing/user-story-testing-05-01.png">
 </details>
+<hr>
 
 6.	As a user I want to be able to make a booking at the restaurant quickly and easily.
 
@@ -324,6 +329,7 @@ The ContactUs Model contains the following:
 <details><summary>Screenshots</summary>
     <img src="docs/testing/user-story-testing-06-01.png">
 </details>
+<hr>
 
 7. As a user I want to be see clear prompts and confirmation when making a booking.
 
@@ -336,6 +342,7 @@ The ContactUs Model contains the following:
     <img src="docs/testing/user-story-testing-07-02.png">
     <img src="docs/testing/user-story-testing-07-03.png">
 </details>
+<hr>
 
 8.	As a user I want to be able to view all of my bookings, both active and expired.
 
@@ -346,6 +353,7 @@ The ContactUs Model contains the following:
 <details><summary>Screenshots</summary>
     <img src="docs/testing/user-story-testing-08-01.png">
 </details>
+<hr>
 
 9.	As a user I want to be able to change or cancel my booking without a long process.
 
@@ -358,6 +366,7 @@ The ContactUs Model contains the following:
     <img src="docs/testing/user-story-testing-09-01.png">
     <img src="docs/testing/user-story-testing-09-02.png">
 </details>
+<hr>
 
 10. As a user I want to view the site's blog for updates on the restaurant or related articles.
 
@@ -370,12 +379,17 @@ The ContactUs Model contains the following:
     <img src="docs/testing/user-story-testing-10-02.png">
     <img src="docs/testing/user-story-testing-10-03.png">
 </details>
+<hr>
 
 11.	As an admin/authorised user I want to be able to log in to the back end admin page.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Admin | Use /admin url extension to access admin login page | Enter admin login details to access the admin hub | Works as expected |
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-11-01.png">
+</details>
 <hr>
 
 12.	As an admin/authorised user I want to be able to manually add or amend a booking.
@@ -384,12 +398,23 @@ The ContactUs Model contains the following:
 |-------------|------------|---------------------|-------------------|
 | Admin | Click on the bookings section in the admin hub | See a list of bookings that can be edited and the option to create a new booking | Works as expected |
 <hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-12-01.png">
+    <img src="docs/testing/user-story-testing-12-02.png">
+    <img src="docs/testing/user-story-testing-12-03.png">
+</details>
+<hr>
 
 13.	As an admin/authorised user I want to be able to confirm or reject bookings.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Admin | Click on the relevant booking in the bookings list | See options to confirm or reject booking | Works as expected |
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-13-01.png">
+    <img src="docs/testing/user-story-testing-13-02.png">
+</details>
 <hr>
 
 14.	As an admin/authorised user I want to be able to add, edit or remove items from the menus.
@@ -398,12 +423,30 @@ The ContactUs Model contains the following:
 |-------------|------------|---------------------|-------------------|
 | Admin | Go to the tapas menu or drink menu sections in the admin hub | See each menu item that can be edited or removed and the option to create new menu item | Works as expected |
 <hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-14-01.png">
+    <img src="docs/testing/user-story-testing-14-02.png">
+    <img src="docs/testing/user-story-testing-14-03.png">
+    <img src="docs/testing/user-story-testing-14-04.png">
+    <img src="docs/testing/user-story-testing-14-05.png">
+</details>
+<hr>
 
 15.	As an admin/authorised user I want to be able to add, edit or remove blog posts.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Admin | Go to the blog posts section in the admin hub | See a list of blog posts which can be edited or removed and the option to create a new blog post | Works as expected |
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-15-01.png">
+    <img src="docs/testing/user-story-testing-15-02.png">
+    <img src="docs/testing/user-story-testing-15-03.png">
+    <img src="docs/testing/user-story-testing-15-04.png">
+    <img src="docs/testing/user-story-testing-15-05.png">
+    <img src="docs/testing/user-story-testing-15-06.png">
+    <img src="docs/testing/user-story-testing-15-07.png">
+</details>
 <hr>
 
 16.	As an admin/authorised user I want to be able to moderate blog post comments before approving them.
@@ -412,12 +455,22 @@ The ContactUs Model contains the following:
 |-------------|------------|---------------------|-------------------|
 | Admin | Go to blog comments section in admin hub | See a list of blog post comments which can be reviewed before approving | Works as expected |
 <hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-16-01.png">
+</details>
+<hr>
 
-17.	As an admin/authorised user I want to be able to search and filter through bookings, menus, blog posts and customer messages.
+17.	As an admin/authorised user I want to be able to search and filter through bookings, blog posts and customer messages.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Admin | Go to the relevant section in admin hub | See options to filter entries from the booking, blog and contact apps as well as users and accounts  | Works as expected |
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-17-01.png">
+    <img src="docs/testing/user-story-testing-17-02.png">
+    <img src="docs/testing/user-story-testing-17-03.png">
+</details>
 <hr>
 
 18.	As a site owner I want to provide clearly presented contact and booking details to maximise customer interaction.
@@ -432,6 +485,7 @@ The ContactUs Model contains the following:
     <img src="docs/testing/user-story-testing-18-02.png">
     <img src="docs/testing/user-story-testing-18-03.png">
 </details>
+<hr>
 
 19.	As a site owner I want validated data entered into my site to keep my databases accurate and efficient.
 
@@ -447,6 +501,7 @@ The ContactUs Model contains the following:
     <img src="docs/testing/user-story-testing-19-04.png">
     <img src="docs/testing/user-story-testing-19-05.png">
 </details>
+<hr>
 
 ### Automated Testing
 - Testing was done using the built in Django module, unittest.
