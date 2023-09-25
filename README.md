@@ -41,20 +41,27 @@ Developed by Michael Roberts
 
 ## Project Goals
 ### User Goals
-- To create a table booking
-- To be able to view edit and cancel bookings
-- To view menus, a blog and contact info
+- Find information on a local tapas restaurant and be able to see a menu.
+- Be able to make a booking at the restaurant which I can later change or cancel.
+- Be able to contact the restaurant with any other enquiries.
+- Be able to view and interact with the restaurants blog.
 
 ### Site Owner Goals
-- To provide a solution to allow users to book a table online
-- To attract more business with a well crafted site
-- Provide a modern application with an easy navigation
-- Fully responsive and accessible
+- To attract more business and generate bookings with a well crafted site.
+- Provide clear information and easy navigation throughout the site.
+- Make the site fully responsive and accessible.
 
 ## User Experience
 ### Target Audience
+- People who want to book a table at a tapas restaurant for a meal or a party.
+- Tourists visiting the area that are looking for a tapas restaurant.
+- People employed in the area to eat and drink after work.
 
 ### User Requirements
+- Fully responsive
+- Accessible
+- Clear and simple navigation and site interaction
+- Contact information
 
 ## User Stories
 ### User
