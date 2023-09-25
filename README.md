@@ -87,9 +87,9 @@ Developed by Michael Roberts
 17.	As an admin/authorised user I want to be able to search and filter through bookings, menus, blog posts and customer messages.
 
 ### Site Owner
-18.	As an site owner I want to provide a fully responsive site to ensure a good user experience for my customers and admin.
-19.	As an site owner I want validated data entered into my site so that to keep my databases accurate and efficient.
-20.	As an site owner I want to provide clearly presented contact and booking details to maximise customer interaction.
+18.	As an site owner I want to provide clearly presented contact and booking details to maximise customer interaction.
+19.	As an site owner I want to provide a fully responsive site to ensure a good user experience for my customers and admin.
+20.	As an site owner I want validated data entered into my site so that to keep my databases accurate and efficient.
 
 
 ## Design
@@ -317,6 +317,56 @@ The ContactUs Model contains the following:
 |-------------|------------|---------------------|-------------------|
 | Blog | Navigate to the blog page | See a list of blog posts which can be clicked to see full details | Works as expected |
 <hr>
+
+11.	As an admin/authorised user I want to be able to log in to the back end admin page.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Admin | Use /admin url extension to access admin login page | Enter admin login details to access the admin hub | Works as expected |
+<hr>
+
+12.	As an admin/authorised user I want to be able to manually add or amend a booking.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Admin | Click on the bookings section in the admin hub | See a list of bookings that can be edited and the option to create a new booking | Works as expected |
+<hr>
+
+13.	As an admin/authorised user I want to be able to confirm or reject bookings.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Admin | Click on the relevant booking in the bookings list | See options to confirm or reject booking | Works as expected |
+<hr>
+
+14.	As an admin/authorised user I want to be able to add, edit or remove items from the menus.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Admin | Go to the tapas menu or drink menu sections in the admin hub | See each menu item that can be edited or removed and the option to create new menu item | Works as expected |
+<hr>
+
+15.	As an admin/authorised user I want to be able to add, edit or remove blog posts.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Admin | Go to the blog posts section in the admin hub | See a list of blog posts which can be edited or removed and the option to create a new blog post | Works as expected |
+<hr>
+
+16.	As an admin/authorised user I want to be able to moderate blog post comments before approving them.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Admin | Go to blog comments section in admin hub | See a list of blog post comments which can be reviewed before approving | Works as expected |
+<hr>
+
+17.	As an admin/authorised user I want to be able to search and filter through bookings, menus, blog posts and customer messages.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Admin | Go to the relevant section in admin hub | See options to filter entries from the booking, blog and contact apps as well as users and accounts  | Works as expected |
+<hr>
+
 
 ### Automated Testing
 - Testing was done using the built in Django module, unittest.
