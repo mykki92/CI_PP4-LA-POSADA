@@ -57,7 +57,7 @@ class MakeBooking(View):
 
 # Class to display booking confirmation
 class BookingConfirmed(generic.DetailView):
-    template_name = 'booking/booking_confirmed.html'
+    template_name = 'booking_confirmed.html'
 
     def get(self, request):
         return render(request, 'booking/booking_confirmed.html')

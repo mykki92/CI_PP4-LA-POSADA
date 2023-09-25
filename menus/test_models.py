@@ -21,9 +21,9 @@ class TestModels(TestCase):
         drink = DrinkItem.objects.create(
             drink_name='Test drink',
             description='Test description',
-            price='9.99',
+            drink_price='9.99',
             drink_type='0'
             )
-        self.assertEqual(drink.price, '9.99')
+        self.assertEqual(drink.drink_price, '9.99')
         self.assertEqual(drink.description, 'Test description')
         self.assertEqual(drink.drink_type, '0')
