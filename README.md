@@ -93,11 +93,29 @@ Developed by Michael Roberts
 
 ## Design
 ### Colours
+The website was designed to be simple but stylish, the site implements multiple images and forms so use of fonting and color was kept minimal so as not to overload the pages.
+Dark grey themes were used for the header and footer with a white background set to the main body of the page. White font color was used against the grey backgrounds and black against the white backgrounds. All pages were tested and validated for contrast.
 
 ### Fonts
+The fonts selected were Josefin Sans with sans-serif as a backup, sourced from Google Fonts.
 
 ### Structure
 #### Website Pages
+The site was designed to be clearly presented and easy to navigate with a uniform header containing navigation links and footer containing social media links.
+
+- The site consists of the following pages:
+  - Homepage featuring images of the restaurant and food available, and a short introduction.
+  - Tapas Menu and Drinks Menu pages featuring all menu items with descriptions and prices.
+  - Blog page with a list view of blog posts.
+  - Expanded blog view displays a post the user has selected so they can read the blog, if they are logged in they can also like and leave a comment which will then need to be approved before it is displayed.
+  - Booking page with a booking form that can be submitted by signed in users.
+  - View Bookings displays all bookings associated with the users account.
+  - Amend Booking allows the user to change their booking details.
+  - Cancel Booking allows the user to cancel their booking.
+  - Contact Us allows the user to send us a message or enquiry to the restaurant if they are signed in, or can contact us from the displayed email and phone number or visit the address listed.
+  - Sign In/Sign Out allows users to access their account to make bookings, make enquiries and interact with the restaurant blog.
+  - Sign Up allows the user to register an account with the restaurant.
+  - 404 error page to display if a 404 error is raised
 
 #### Database
 Built with Python and the Django framework with a Postgres database for the deployed Heroku app.
@@ -194,6 +212,7 @@ The ContactUs Model contains the following:
 
 ## Technologies Used
 ### Languages & Frameworks
+
 
 ### Libraries & Tools
 
