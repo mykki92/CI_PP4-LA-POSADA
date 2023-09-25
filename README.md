@@ -1,7 +1,7 @@
 # **La Posada**
 Developed by Michael Roberts
 
-💻 [Visit live website]()  
+💻 [Visit live website](https://pp4-la-posada-a7d4e62f5c13.herokuapp.com/)  
 (Ctrl + click to open in new tab)
 
 ## Introduction
@@ -21,7 +21,7 @@ Developed by Michael Roberts
     * [Colours](#colours)
     * [Fonts](#fonts)
     * [Structure](#structure)
-        * [Website pages](#website-pages)
+        * [Website Pages](#website-pages)
         * [Database](#database)
     * [Wireframes](#wireframes)
 * [Technologies Used](#technologies-used)
@@ -270,7 +270,10 @@ The ContactUs Model contains the following:
 |-------------|------------|---------------------|-------------------|
 | Home | Enter the site or click the home button or logo to go back to the home page | View the home page with images of the restaurant and food. | Works as expected |
 <hr>
-
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-01-01.png">
+    <img src="docs/testing/user-story-testing-01-02.png">
+</details>
 
 2.	As a user I want to navigate through the sites pages easily to get more information.
 
@@ -278,6 +281,9 @@ The ContactUs Model contains the following:
 |-------------|------------|---------------------|-------------------|
 | Header & Navigation | Click throught the navigation links | Navigation is clear and simple and each page loads correctly | Works as expected |
 <hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-02-01.png">
+</details>
 
 3. As a user I want to view the food and drink menu before I decide to make a booking or not.
 
@@ -285,6 +291,9 @@ The ContactUs Model contains the following:
 |-------------|------------|---------------------|-------------------|
 | Menus | Navigate to the menus dropdown in the nav bar | Find up to date food and drink menus with descriptions and prices | Works as expected |
 <hr>
+<details><summary>Screenshots</summary>
+    <img src="">
+</details>
 
 4.	As a user I want to view the opening hours and details on how to contact the restaurant via email, phone and socials.
 
@@ -292,6 +301,9 @@ The ContactUs Model contains the following:
 |-------------|------------|---------------------|-------------------|
 | Contact Us | Click on the 'Contact Us' link in the navigation bar and scroll to bottom of page | Find opening hours, contact details and social links in the page footers | Works as expected |
 <hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-04-01.png">
+</details>
 
 5. As a user I want to create an account so I can make bookings and enquiries and interact with the restaurants blog page.
 
@@ -299,13 +311,19 @@ The ContactUs Model contains the following:
 |-------------|------------|---------------------|-------------------|
 | Sign Up | Navigate to the sign up page and enter a username and password | Access previously unavailable features such as table booking, contact form and blog commenting  | Works as expected |
 <hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-05-01.png">
+</details>
 
 6.	As a user I want to be able to make a booking at the restaurant quickly and easily.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Booking | Navigate to the booking page when logged in | Complete the short booking form, submit and recieve confirmation | Works as expected |
+| Booking | Navigate to the booking page when logged in | Complete the short booking form, and click submit | Works as expected |
 <hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-06-01.png">
+</details>
 
 7. As a user I want to be see clear prompts and confirmation when making a booking.
 
@@ -313,6 +331,11 @@ The ContactUs Model contains the following:
 |-------------|------------|---------------------|-------------------|
 | Booking Confirmed | Make a booking in the Booking page | Submit your booking request and automatically redirect to confirm booking page | Works as expected |
 <hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-07-01.png">
+    <img src="docs/testing/user-story-testing-07-02.png">
+    <img src="docs/testing/user-story-testing-07-03.png">
+</details>
 
 8.	As a user I want to be able to view all of my bookings, both active and expired.
 
@@ -320,6 +343,9 @@ The ContactUs Model contains the following:
 |-------------|------------|---------------------|-------------------|
 | View Booking | Navigate to the View Bookings page | See a list view of all bookings associated with your account | Works as expected |
 <hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-08-01.png">
+</details>
 
 9.	As a user I want to be able to change or cancel my booking without a long process.
 
@@ -328,6 +354,10 @@ The ContactUs Model contains the following:
 | Amend Booking | Click the Amend or Cancel buttons in the relevant booking | Amend or cancel booking and recieve confirmation | Works as expected |
 | Cancel Booking | Click the Amend or Cancel buttons in the relevant booking | Amend or cancel booking and recieve confirmation | Works as expected |
 <hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-09-01.png">
+    <img src="docs/testing/user-story-testing-09-02.png">
+</details>
 
 10. As a user I want to view the site's blog for updates on the restaurant or related articles.
 
@@ -335,6 +365,11 @@ The ContactUs Model contains the following:
 |-------------|------------|---------------------|-------------------|
 | Blog | Navigate to the blog page | See a list of blog posts which can be clicked to see full details | Works as expected |
 <hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-10-01.png">
+    <img src="docs/testing/user-story-testing-10-02.png">
+    <img src="docs/testing/user-story-testing-10-03.png">
+</details>
 
 11.	As an admin/authorised user I want to be able to log in to the back end admin page.
 
@@ -385,21 +420,33 @@ The ContactUs Model contains the following:
 | Admin | Go to the relevant section in admin hub | See options to filter entries from the booking, blog and contact apps as well as users and accounts  | Works as expected |
 <hr>
 
-18.	As an site owner I want to provide clearly presented contact and booking details to maximise customer interaction.
+18.	As a site owner I want to provide clearly presented contact and booking details to maximise customer interaction.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Booking | Navigate to the booking page when signed in | See a simple and clearly presented booking form  | Works as expected |
 | Contact Us | Navigate to the contact us page | See a map with the restaurants location, opening hours, contact details and a contact form  | Works as expected |
 <hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-18-01.png">
+    <img src="docs/testing/user-story-testing-18-02.png">
+    <img src="docs/testing/user-story-testing-18-03.png">
+</details>
 
-19.	As an site owner I want validated data entered into my site so that to keep my databases accurate and efficient.
+19.	As a site owner I want validated data entered into my site to keep my databases accurate and efficient.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Booking | Navigate to the booking page | See prompts to reenter information if phone number or email is incorrect or if the booking slot is already filled  | Works as expected |
 | Contact | Navigate to the booking page | See prompts to reenter information if phone number or email is incorrect  | Works as expected |
 <hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/testing/user-story-testing-19-01.png">
+    <img src="docs/testing/user-story-testing-19-02.png">
+    <img src="docs/testing/user-story-testing-19-03.png">
+    <img src="docs/testing/user-story-testing-19-04.png">
+    <img src="docs/testing/user-story-testing-19-05.png">
+</details>
 
 ### Automated Testing
 - Testing was done using the built in Django module, unittest.
