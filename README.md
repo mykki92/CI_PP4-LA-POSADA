@@ -422,11 +422,24 @@ The website was tested on the following browsers:
 
 ## Heroku Deployment
 ### Fork Repository
+To fork the repository by following these steps:
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
+<hr>
 
 ### Clone Repository
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7.Press Enter to create your local clone.
 
 ## Credits
 ### Images
+Images courtesy of Pexels.com:
 
 ### Code
 
