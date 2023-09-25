@@ -88,8 +88,7 @@ Developed by Michael Roberts
 
 ### Site Owner
 18.	As an site owner I want to provide clearly presented contact and booking details to maximise customer interaction.
-19.	As an site owner I want to provide a fully responsive site to ensure a good user experience for my customers and admin.
-20.	As an site owner I want validated data entered into my site so that to keep my databases accurate and efficient.
+19.	As an site owner I want validated data entered into my site so that to keep my databases accurate and efficient.
 
 
 ## Design
@@ -367,6 +366,21 @@ The ContactUs Model contains the following:
 | Admin | Go to the relevant section in admin hub | See options to filter entries from the booking, blog and contact apps as well as users and accounts  | Works as expected |
 <hr>
 
+18.	As an site owner I want to provide clearly presented contact and booking details to maximise customer interaction.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Booking | Navigate to the booking page when signed in | See a simple and clearly presented booking form  | Works as expected |
+| Contact Us | Navigate to the contact us page | See a map with the restaurants location, opening hours, contact details and a contact form  | Works as expected |
+<hr>
+
+19.	As an site owner I want validated data entered into my site so that to keep my databases accurate and efficient.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Booking | Navigate to the booking page | See prompts to reenter information if phone number or email is incorrect or if the booking slot is already filled  | Works as expected |
+| Contact | Navigate to the booking page | See prompts to reenter information if phone number or email is incorrect  | Works as expected |
+<hr>
 
 ### Automated Testing
 - Testing was done using the built in Django module, unittest.
