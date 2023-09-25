@@ -68,13 +68,13 @@ Developed by Michael Roberts
 1.	As a user I want to know more about the restaurant and get a quick overview.
 2.	As a user I want to navigate through the sites pages easily to get more information.
 3.  As a user I want to view the food and drink menu before I decide to make a booking or not.
-3.	As a user I want to view the opening hours and details on how to contact the restaurant via email, phone and socials.
-8.  As a user I want to create an account so I can make bookings and enquiries and interact with the restaurants blog page.
-4.	As a user I want to be able to make a booking at the restaurant quickly and easily.
-7.  As a user I want to be see clear prompts and confirmation when making a booking or contacting the restaurant.
-6.	As a user I want to be able to view all of my bookings, both active and expired.
-5.	As a user I want to be able to change or cancel my booking without a long process.
-9.  As a user I want to view the site's blog for updates on the restaurant or related articles.
+4.	As a user I want to view the opening hours and details on how to contact the restaurant via email, phone and socials.
+5.  As a user I want to create an account so I can make bookings and enquiries and interact with the restaurants blog page.
+6.	As a user I want to be able to make a booking at the restaurant quickly and easily.
+7.  As a user I want to see clear prompts and confirmation when making a booking or contacting the restaurant.
+8.	As a user I want to be able to view all of my bookings, both active and expired.
+9.	As a user I want to be able to change or cancel my booking without a long process.
+10.  As a user I want to view the site's blog for updates on the restaurant or related articles.
 
 
 ### Admin/Authorised User
