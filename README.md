@@ -67,14 +67,15 @@ Developed by Michael Roberts
 ### User
 1.	As a user I want to know more about the restaurant and get a quick overview.
 2.	As a user I want to navigate through the sites pages easily to get more information.
+3.  As a user I want to view the food and drink menu before I decide to make a booking or not.
 3.	As a user I want to view the opening hours and details on how to contact the restaurant via email, phone and socials.
+8.  As a user I want to create an account so I can make bookings and enquiries and interact with the restaurants blog page.
 4.	As a user I want to be able to make a booking at the restaurant quickly and easily.
-5.	As a user I want to be able to change or cancel my booking without a long process.
+7.  As a user I want to be see clear prompts and confirmation when making a booking or contacting the restaurant.
 6.	As a user I want to be able to view all of my bookings, both active and expired.
-7. As a user I want to be see clear prompts and confirmation when making a booking or contacting the restaurant.
-8. As a user I want to create an account so I can make bookings and enquiries and interact with the restaurants blog page.
-9. As a user I want to view the site's blog for updates on the restaurant or related articles.
-10. As a user I want to view the food and drink menu before I decide to make a booking or not.
+5.	As a user I want to be able to change or cancel my booking without a long process.
+9.  As a user I want to view the site's blog for updates on the restaurant or related articles.
+
 
 ### Admin/Authorised User
 11.	As an admin/authorised user I want to be able to log in to the back end admin page.
@@ -86,9 +87,9 @@ Developed by Michael Roberts
 17.	As an admin/authorised user I want to be able to search and filter through bookings, menus, blog posts and customer messages.
 
 ### Site Owner
-16.	As an site owner I want to provide a fully responsive site to ensure a good user experience for my customers and admin.
-16.	As an site owner I want validated data entered into my site so that to keep my databases accurate and efficient.
-16.	As an site owner I want to provide clearly presented contact and booking details to maximise customer interaction.
+18.	As an site owner I want to provide a fully responsive site to ensure a good user experience for my customers and admin.
+19.	As an site owner I want validated data entered into my site so that to keep my databases accurate and efficient.
+20.	As an site owner I want to provide clearly presented contact and booking details to maximise customer interaction.
 
 
 ## Design
@@ -245,7 +246,77 @@ The ContactUs Model contains the following:
 
 ## Testing
 ### Manual Testing
+1.	As a user I want to know more about the restaurant and get a quick overview.
 
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Home | Enter the site or click the home button or logo to go back to the home page | View the home page with images of the restaurant and food. | Works as expected |
+<hr>
+
+
+2.	As a user I want to navigate through the sites pages easily to get more information.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Header & Navigation | Click throught the navigation links | Navigation is clear and simple and each page loads correctly | Works as expected |
+<hr>
+
+3. As a user I want to view the food and drink menu before I decide to make a booking or not.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Menus | Navigate to the menus dropdown in the nav bar | Find up to date food and drink menus with descriptions and prices | Works as expected |
+<hr>
+
+4.	As a user I want to view the opening hours and details on how to contact the restaurant via email, phone and socials.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact Us | Click on the 'Contact Us' link in the navigation bar and scroll to bottom of page | Find opening hours, contact details and social links in the page footers | Works as expected |
+<hr>
+
+5. As a user I want to create an account so I can make bookings and enquiries and interact with the restaurants blog page.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Sign Up | Navigate to the sign up page and enter a username and password | Access previously unavailable features such as table booking, contact form and blog commenting  | Works as expected |
+<hr>
+
+6.	As a user I want to be able to make a booking at the restaurant quickly and easily.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Booking | Navigate to the booking page when logged in | Complete the short booking form, submit and recieve confirmation | Works as expected |
+<hr>
+
+7. As a user I want to be see clear prompts and confirmation when making a booking.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Booking Confirmed | Make a booking in the Booking page | Submit your booking request and automatically redirect to confirm booking page | Works as expected |
+<hr>
+
+8.	As a user I want to be able to view all of my bookings, both active and expired.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| View Booking | Navigate to the View Bookings page | See a list view of all bookings associated with your account | Works as expected |
+<hr>
+
+9.	As a user I want to be able to change or cancel my booking without a long process.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Amend Booking | Click the Amend or Cancel buttons in the relevant booking | Amend or cancel booking and recieve confirmation | Works as expected |
+| Cancel Booking | Click the Amend or Cancel buttons in the relevant booking | Amend or cancel booking and recieve confirmation | Works as expected |
+<hr>
+
+10. As a user I want to view the site's blog for updates on the restaurant or related articles.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Blog | Navigate to the blog page | See a list of blog posts which can be clicked to see full details | Works as expected |
+<hr>
 
 ### Automated Testing
 - Testing was done using the built in Django module, unittest.
