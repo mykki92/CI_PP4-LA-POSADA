@@ -406,6 +406,17 @@ The ContactUs Model contains the following:
 </details>
 
 ### Device Testing & Browser Compatibility
+The website was tested on the following devices:
+- Google Pixel 7
+- Samsung Galaxy A7 Lite Tab
+- HP Laptop 14
+- Apple iMac
+
+The website was tested on the following browsers:
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+- Safari
 
 ## Bugs
 
