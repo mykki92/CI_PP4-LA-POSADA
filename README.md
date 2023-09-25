@@ -439,8 +439,9 @@ You can clone the repository by following these steps:
 
 ## Credits
 ### Images
-Images courtesy of Pexels.com:
+Images used were sourced from Pexels.com and the logo was generated at Looka.com.
 
 ### Code
+Bootstrap dark navigation theme was used alongside boostrap classes and carousel
 
 ## Acknowledgements
