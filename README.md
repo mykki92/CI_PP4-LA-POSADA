@@ -41,9 +41,15 @@ Developed by Michael Roberts
 
 ## Project Goals
 ### User Goals
-
+- To create a table booking
+- To be able to view edit and cancel bookings
+- To view menus, a blog and contact info
 
 ### Site Owner Goals
+- To provide a solution to allow users to book a table online
+- To attract more business with a well crafted site
+- Provide a modern application with an easy navigation
+- Fully responsive and accessible
 
 ## User Experience
 ### Target Audience
@@ -232,6 +238,7 @@ The ContactUs Model contains the following:
 
 ## Testing
 ### Manual Testing
+
 
 ### Automated Testing
 - Testing was done using the built in Django module, unittest.
