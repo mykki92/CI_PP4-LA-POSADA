@@ -218,36 +218,121 @@ The ContactUs Model contains the following:
 
 ## Features
 ### Home Page
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-homepage-carousel.png">
+    <img src="docs/features/feature-homepage-introduction.png">
+</details>
+<hr>
 
 ### Header & Navigation
 
 ### Footer
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-footer.png">
+</details>
+<hr>
 
 ### Sign Up
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-signup.png">
+</details>
+<hr>
 
 ### Sign In 
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-signin.png">
+</details>
+<hr>
 
 ### Sign Out
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-signout.png">
+</details>
+<hr>
 
 ### Booking
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-booking.png">
+</details>
+<hr>
 
 ### My Bookings
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-my-bookings.png">
+</details>
+<hr>
 
 ### Amend Booking
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-amend-booking.png">
+</details>
+<hr>
 
 ### Cancel Booking
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-cancel-booking.png">
+</details>
+<hr>
 
 ### Tapas Menu
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-tapas-menu-01.png">
+    <img src="docs/features/feature-tapas-menu-02.png">
+    <img src="docs/features/feature-tapas-menu-03.png">
+    <img src="docs/features/feature-tapas-menu-04.png">
+    <img src="docs/features/feature-tapas-menu-05.png">
+</details>
+<hr>
 
 ### Drinks Menu
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-drinks-menu-01.png">
+    <img src="docs/features/feature-drinks-menu-02.png">
+    <img src="docs/features/feature-drinks-menu-03.png">
+    <img src="docs/features/feature-drinks-menu-04.png">
+</details>
+<hr>
 
 ### Blog
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-blog.png">
+</details>
+<hr>
 
 ### Blog Detail
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-blog-detail-01.png">
+    <img src="docs/features/feature-blog-detail-02.png">
+</details>
+<hr>
 
-### Comments
+### Blog Likes/Comments
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-blog-likes-comments.png">
+</details>
+<hr>
 
 ### Contact Us
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-contact-us-01.png">
+    <img src="docs/features/feature-contact-us-02.png">
+</details>
+<hr>
 
 ### Pagination
 
