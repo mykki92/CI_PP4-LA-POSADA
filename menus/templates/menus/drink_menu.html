@@ -58,6 +58,7 @@
                 {% if drink.drink_type == 2 %}
                 <div class="text-center">
                     <h5>{{ drink.drink_name }}</h5>
+                    {{ drink.description | safe }}
                     <p>£{{ drink.drink_price }}0</p>
                     <br>
                 </div>

@@ -294,7 +294,12 @@ The ContactUs Model contains the following:
 | Menus | Navigate to the menus dropdown in the nav bar | Find up to date food and drink menus with descriptions and prices | Works as expected |
 <hr>
 <details><summary>Screenshots</summary>
-    <img src="">
+    <img src="docs/testing/user-story-testing-03-01.png">
+    <img src="docs/testing/user-story-testing-03-02.png">
+    <img src="docs/testing/user-story-testing-03-03.png">
+    <img src="docs/testing/user-story-testing-03-04.png">
+    <img src="docs/testing/user-story-testing-03-05.png">
+    <img src="docs/testing/user-story-testing-03-06.png">
 </details>
 <hr>
 
