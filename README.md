@@ -545,6 +545,11 @@ The website was tested on the following browsers:
 - Safari
 
 ## Bugs
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| Blog page not linking from navigation bar | Correct url pattern by adding 'blog/' to the path |
+| Pagination not working on blog page | Not yet fixed |
+<hr>
 
 ## Heroku Deployment
 ### Fork Repository
