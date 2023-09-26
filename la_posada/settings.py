@@ -23,7 +23,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'pp4-la-posada-a7d4e62f5c13.herokuapp.com',
     'localhost',
-    '8000-mykki92-cipp4laposada-kd73he7nv4k.ws-eu104.gitpod.io',
+    '8000-mykki92-cipp4laposada-si2cs6gqume.ws-eu105.gitpod.io',
 ]
 
 
