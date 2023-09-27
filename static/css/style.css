@@ -9,6 +9,7 @@ body {
 
 .nav-link {
     color: #fff;
+    text-align: center;
 }
 .nav-link:hover {
     color: #fff;
@@ -16,6 +17,7 @@ body {
 }
 .dropdown-item {
     color: #fff;
+    text-align: center;
 }
 
 .btn-success {

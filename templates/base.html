@@ -19,47 +19,52 @@
 </head>
 <body>
     <!-- Navbar with page links -->
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="{% url 'home' %}">
             <img src="{% static 'images/navbar-brand.png' %}" class="img-fluid" alt="logo">
         </a>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'home' %}">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Menus</a>
-                <div class="dropdown-menu bg-dark">
-                    <!-- Menu dropdown to food and drink menus-->
-                    <a class="dropdown-item" href="{% url 'tapas_menu' %}">Tapas Menu</a>
-                    <a class="dropdown-item" href="{% url 'drink_menu' %}">Drinks Menu</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'blog' %}">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'make_booking' %}">Booking</a>
-            </li>
-            {% if user.is_authenticated %}
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'view_bookings' %}">My Bookings</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'account_logout' %}">Sign Out</a>
-            </li>
-            {% else %}
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'account_login' %}">Sign In</a>
-            </li>
-            {% endif %}
-        </ul>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Menus</a>
+                    <div class="dropdown-menu bg-dark">
+                        <!-- Menu dropdown to food and drink menus-->
+                        <a class="dropdown-item" href="{% url 'tapas_menu' %}">Tapas Menu</a>
+                        <a class="dropdown-item" href="{% url 'drink_menu' %}">Drinks Menu</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'make_booking' %}">Booking</a>
+                </li>
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'view_bookings' %}">My Bookings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'account_logout' %}">Sign Out</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'account_login' %}">Sign In</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
     </nav>
     <!-- Block content html inserts here -->
     <main class="flex-shrink-0 main-bg">
