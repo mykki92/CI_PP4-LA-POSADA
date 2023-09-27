@@ -13,7 +13,7 @@
     </div>
     <!-- Blog Entries Column -->
     <div class="row justify-content-center">
-        {% for post in post_list %}
+        {% for post in object_list %}
         <div class="col-10 col-md-5">
             <div class="card mb-5">
                 <div class="card-body">
@@ -45,14 +45,20 @@
         {% endfor %}
     </div>
     <!-- Pagination -->
-    <div class="row d-flex my-5 justify-content-center text-center">
-        {% if post_list.has_previous %}
-        <a href="?page={{ post_list.previous_page_number }}">&laquo Previous</a>
-        {% endif %}
-        Page {{ post_list.number }} of {{ post_list.paginator.num_pages }}
-        {% if post_list.has_next %}
-        <a href="?page={{ post_list.next_page_number }}">Next &raquo</a>
-        {% endif %}
+    <div class="pagination justify-content-center">
+        <span class="step-links">
+            {% if object_list.has_previous %}
+                <a href="?page={{ object_list.previous_page_number }}">&laquo; Previous</a>
+            {% endif %}
+    
+            <span class="current-page">
+                Page {{ object_list.number }} of {{ object_list.paginator.num_pages }} 
+            </span>
+    
+            {% if object_list.has_next %}
+                <a href="?page={{ object_list.next_page_number }}">Next &raquo;</a>
+            {% endif %}
+        </span>
     </div>
     <hr>
     <br>

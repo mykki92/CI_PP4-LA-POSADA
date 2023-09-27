@@ -74,12 +74,13 @@ MESSAGE_STORAGE = "django.contrib.messages.storage.fallback.FallbackStorage"
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware',]
+    'allauth.account.middleware.AccountMiddleware',
+    ]
 
 ROOT_URLCONF = 'la_posada.urls'
 

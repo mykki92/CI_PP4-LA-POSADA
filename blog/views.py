@@ -12,7 +12,7 @@ class BlogList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'blog.html'
-    paginated_by = 4
+    paginate_by = 4
 
 
 # Class to expand the blog post summary to full view
