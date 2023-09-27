@@ -1,6 +1,7 @@
 from pathlib import Path
 import os
 import dj_database_url
+from django.contrib import messages
 from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
     import env
@@ -30,6 +31,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,11 +57,20 @@ INSTALLED_APPS = [
 ]
 
 SITE_ID = 1
-
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+MESSAGE_TAGS = {
+    messages.INFO: 'alert-info',
+    messages.DEBUG: 'alert-info',
+    messages.ERROR: 'alert-danger',
+    messages.WARNING: 'alert-warning',
+    messages.SUCCESS: '',
+}
+
+MESSAGE_STORAGE = "django.contrib.messages.storage.fallback.FallbackStorage"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
