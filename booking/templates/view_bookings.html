@@ -11,9 +11,10 @@
             <hr>
         </div>
     </div>
-    <div class="row row-cols-2 justify-content-center">
+    <!-- Booking cards -->
+    <div class="row justify-content-center">
         {% for booking in booking_page %}
-        <div class="col-md-5">
+        <div class="col-10 col-md-5">
             <div class="card mb-5">
                 <div class="card-body bg-darker grow booking-card">
                     <h2 class="card-title">{{ booking.name }}</h2>
