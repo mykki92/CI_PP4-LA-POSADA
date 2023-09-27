@@ -5,6 +5,7 @@ Developed by Michael Roberts
 (Ctrl + click to open in new tab)
 
 ## Introduction
+La Posada is a fictional tapas restaurant in Brighton, England. This website aims to give users an overview of the restaurant and the food and drink available, provide contact details for customers to give feedback and a booking system for users to make reservations, and run a blog where users can stay updated and interact with the restaurant and other users.
 
 ## Table of Contents
 * [Project Goals](#project-goals)
@@ -709,3 +710,5 @@ Images used were sourced from Pexels.com and the logo was generated at Looka.com
 Bootstrap dark navigation theme was used alongside boostrap classes and carousel
 
 ## Acknowledgements
+- My Code Institute Mentor Mo Shami for his guidance and advice.
+- Code Institute learning modules and tutor support.
