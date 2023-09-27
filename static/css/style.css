@@ -5,6 +5,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 110%;
     color: #212529;
+    padding-top: 70px;
 }
 
 .nav-link {

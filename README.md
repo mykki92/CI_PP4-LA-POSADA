@@ -212,12 +212,41 @@ The ContactUs Model contains the following:
 
 ## Technologies Used
 ### Languages & Frameworks
-
+- HTML
+- CSS
+- Javascript
+- Python
+- Django
 
 ### Libraries & Tools
+- [Am I Responsive](http://ami.responsivedesign.is/)
+- [Balsamiq](https://balsamiq.com/)
+- [Bootstrap v5.2](https://getbootstrap.com/)
+- [Cloudinary](https://cloudinary.com/)
+- [Favicon.io](https://favicon.io)
+- [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
+- [Font Awesome](https://fontawesome.com/)
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Heroku Platform](https://id.heroku.com/login)
+- [jQuery](https://jquery.com)
+- [Postgres](https://www.postgresql.org/)
+- [Summernote](https://summernote.org/)
 
 ## Features
+### Header & Navigation
+- Page header is fixed at the top of every page
+- Includes a navigation bar which collapses to a burger icon with a dropdown menu on small screen sizes
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-navbar.png">
+    <img src="docs/features/feature-navbar-collapsed.png">
+</details>
+<hr>
+
 ### Home Page
+- Home page includes an image carousel and an introduction section
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-homepage-carousel.png">
@@ -225,9 +254,9 @@ The ContactUs Model contains the following:
 </details>
 <hr>
 
-### Header & Navigation
-
 ### Footer
+- At the bottom of every page
+- Contains social media links
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-footer.png">
@@ -235,6 +264,7 @@ The ContactUs Model contains the following:
 <hr>
 
 ### Sign Up
+- A page for users to sign up for an account
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-signup.png">
@@ -242,6 +272,7 @@ The ContactUs Model contains the following:
 <hr>
 
 ### Sign In 
+- A page for users to login to their account
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-signin.png">
@@ -249,6 +280,7 @@ The ContactUs Model contains the following:
 <hr>
 
 ### Sign Out
+- A page for users to log out
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-signout.png">
@@ -256,6 +288,7 @@ The ContactUs Model contains the following:
 <hr>
 
 ### Booking
+- Displays a form for the user to make a booking
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-booking.png">
@@ -263,6 +296,7 @@ The ContactUs Model contains the following:
 <hr>
 
 ### My Bookings
+- Displays a paginated list of the users bookings
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-my-bookings.png">
@@ -270,6 +304,7 @@ The ContactUs Model contains the following:
 <hr>
 
 ### Amend Booking
+- Display a form for the user to change their booking details
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-amend-booking.png">
@@ -277,6 +312,7 @@ The ContactUs Model contains the following:
 <hr>
 
 ### Cancel Booking
+- Allows the user to cancel their booking
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-cancel-booking.png">
@@ -284,6 +320,8 @@ The ContactUs Model contains the following:
 <hr>
 
 ### Tapas Menu
+- Displays a menu of food items
+- Categorised into Salads & Cold Cuts, Hot Dishes, Sides and Desserts
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-tapas-menu-01.png">
@@ -295,6 +333,8 @@ The ContactUs Model contains the following:
 <hr>
 
 ### Drinks Menu
+- Displays a menu of drink items
+- Categorised into Beers & Ciders, Wines & Sparlking, Cocktails and Spirits
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-drinks-menu-01.png">
@@ -305,6 +345,7 @@ The ContactUs Model contains the following:
 <hr>
 
 ### Blog
+- Displays a paginated list of blog posts
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-blog.png">
@@ -312,25 +353,32 @@ The ContactUs Model contains the following:
 <hr>
 
 ### Blog Detail
+- Displays a detailed view of the selected blog post
+- Allows the user to like and comment on the post
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-blog-detail-01.png">
     <img src="docs/features/feature-blog-detail-02.png">
-</details>
-<hr>
-
-### Blog Likes/Comments
-<hr>
-<details><summary>Screenshots</summary>
-    <img src="docs/features/feature-blog-likes-comments.png">
+    <img src="docs/features/feature-blog-detail-03.png">
 </details>
 <hr>
 
 ### Contact Us
+- Displays an embedded Google map with the restaurants address, opening times and phone number
+- Displays a form for users to message the restaurant
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-contact-us-01.png">
     <img src="docs/features/feature-contact-us-02.png">
+</details>
+<hr>
+
+### Footer
+- At the bottom of every page
+- Contains social media links
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-footer.png">
 </details>
 <hr>
 
