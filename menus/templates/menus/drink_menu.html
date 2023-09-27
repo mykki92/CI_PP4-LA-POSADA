@@ -10,14 +10,14 @@
     </div>
     <div class="row justify-content-center">
         <!-- Beers & Ciders Drink Items-->
-        <div class="col-sm-8">
+        <div class="col-10 col-lg-8">
             <hr>
             <h2 class="col text-center">Beers & Ciders</h2>
             <hr>
             <div class="row row-cols-2">
                 {% for drink in drink_list %}
                 {% if drink.drink_type == 0 %}
-                <div class="text-center">
+                <div class="col-12 col-md-6 text-center">
                     <h5>{{ drink.drink_name }}</h5>
                     <p>£{{ drink.drink_price }}0</p>
                     <br>
@@ -29,17 +29,18 @@
     </div>
     <div class="row justify-content-center">
         <!-- Wines & Sparkling Drink Items-->
-        <div class="col-sm-8">
+        <div class="col-10 col-lg-8">
             <hr>
             <h2 class="col text-center">Wines & Sparkling</h2>
             <hr>
             <div class="row row-cols-2">
                 {% for drink in drink_list %}
                 {% if drink.drink_type == 1 %}
-                <div class="text-center">
+                <div class="col-12 col-md-6 text-center">
                     <h5>{{ drink.drink_name }}</h5>
                     {{ drink.description | safe }}
-                    <p>GLASS: £{{ drink.glass_price }}0 BOTTLE: £{{ drink.bottle_price }}0</p>
+                    <p>GLASS: £{{ drink.glass_price }}0</p>
+                    <p>BOTTLE: £{{ drink.bottle_price }}0</p>
                     <br>
                 </div>
                 {% endif %}
@@ -49,14 +50,14 @@
     </div>
     <div class="row justify-content-center">
         <!-- Cocktail Drink Items-->
-        <div class="col-sm-8">
+        <div class="col-10 col-lg-8">
             <hr>
             <h2 class="col text-center">Cocktails</h2>
             <hr>
             <div class="row row-cols-2">
                 {% for drink in drink_list %}
                 {% if drink.drink_type == 2 %}
-                <div class="text-center">
+                <div class="col-12 col-md-6 text-center">
                     <h5>{{ drink.drink_name }}</h5>
                     {{ drink.description | safe }}
                     <p>£{{ drink.drink_price }}0</p>
@@ -69,14 +70,14 @@
     </div>
     <div class="row justify-content-center">
         <!-- Spirits Drink Items-->
-        <div class="col-sm-8">
+        <div class="col-10 col-lg-8">
             <hr>
             <h2 class="col text-center">Spirits</h2>
             <hr>
             <div class="row row-cols-2">
                 {% for drink in drink_list %}
                 {% if drink.drink_type == 3 %}
-                <div class="text-center">
+                <div class="col-12 col-md-6 text-center">
                     <h5>{{ drink.drink_name }}</h5>
                     <p>£{{ drink.drink_price }}0</p>
                     <br>
