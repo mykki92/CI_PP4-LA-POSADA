@@ -31,3 +31,8 @@ body {
     border: none;
     text-decoration: underline;
 }
+
+.btn-like{
+    border: 0;
+    background: none;
+}

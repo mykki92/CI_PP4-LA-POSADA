@@ -13,7 +13,7 @@
                 <h1 class="post-title">{{ post.title }}</h1>
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
+            <div class="d-md-block col-md-6 masthead-image">
                 {% if "placeholder" in post.image.url %}
                 <img src="/static/images/logo.png" width="100%">
                 {% else %}
@@ -31,7 +31,7 @@
                     {{ post.content | safe }}
                 </p>
                 <div class="row">
-                    <div class="col-1">
+                    <div class="col-6 col-md-3">
                         <strong>
                             {% if user.is_authenticated %}
                             <form class="d-inline" action="{% url 'blog_likes' post.slug %}" method="POST">
@@ -45,22 +45,25 @@
                                     <i class="far fa-heart"></i>
                                 </button>
                                 {% endif %}
+                                {{ post.likes_count }}
+                                <i class="far fa-comments"></i>
+                                {% with comments.count as total_comments %}
+                                {{ total_comments }}
+                                {% endwith %}
                             </form>
                             {% else %}
                             <span class="text-secondary">
-                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i> 
+                                {{ post.likes_count }}
                             </span>
+                            {% with comments.count as total_comments %}
+                            <span class="text-secondary">
+                                <i class="far fa-comments"> {{ total_comments }} </i>
+                            </span>
+                            {% endwith %}
                             {% endif %}
-                        <span class="text-secondary">{{ post.likes_count }} </span>
                         </strong>
-                    </div>
-                    <div class="col-1">
-                        {% with comments.count as total_comments %}
-                        <strong class="text-secondary"><i class="far fa-comments"></i>
-                            {{ total_comments }}
-                        </strong>
-                        {% endwith %}
-                    </div>
+                    </div>    
                 </div>
             </div>
         </div>
