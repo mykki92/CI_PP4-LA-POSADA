@@ -449,6 +449,109 @@ The W3C Jigsaw CSS Validation Service
 ### JavaScript Validation
 
 ### PEP8 Validation
+PEP8 Validation Service was used to check the code for PEP8 requirements via Pycodestyle as PEP8online was down
+
+<hr><summary>La Posada</summary><hr>
+
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8-validation-la-posada-urls.png">
+</details><hr>
+
+<hr><summary>Home</summary><hr>
+
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8-validation-home-urls.png">
+</details>
+<details><summary>views.py</summary>
+<img src="docs/validation/pep8-validation-home-views.png">
+</details><hr>
+
+<hr><summary>Menus</summary><hr>
+
+<details><summary>Admin.py</summary>
+<img src="docs/validation/pep8-validation-menus-admin.png">
+</details>
+<details><summary>models.py</summary>
+<img src="docs/validation/pep8-validation-menus-models.png">
+</details>
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8-validation-menus-urls.png">
+</details>
+<details><summary>views.py</summary>
+<img src="docs/validation/pep8-validation-menus-views.png">
+</details>
+<details><summary>test_models.py</summary>
+<img src="docs/validation/pep8-validation-menus-test-models.png">
+</details>
+<details><summary>test_views.py</summary>
+<img src="docs/validation/pep8-validation-menus-test-views.png">
+</details>
+<details><summary>test_urls.py</summary>
+<img src="docs/validation/pep8-validation-menus-test-urls.png">
+</details>
+
+
+<hr><summary>Booking</summary><hr>
+
+<details><summary>Admin.py</summary>
+<img src="docs/validation/pep8-validation-booking-admin.png">
+</details>
+<details><summary>models.py</summary>
+<img src="docs/validation/pep8-validation-booking-models.png">
+</details>
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8-validation-booking-urls.png">
+</details>
+<details><summary>views.py</summary>
+<img src="docs/validation/pep8-validation-booking-views.png">
+</details>
+<details><summary>test_models.py</summary>
+<img src="docs/validation/pep8-validation-booking-test-models.png">
+</details>
+<details><summary>test_urls.py</summary>
+<img src="docs/validation/pep8-validation-booking-test-urls.png">
+</details>
+<details><summary>forms.py</summary>
+<img src="docs/validation/pep8-validation-booking-forms.png">
+</details>
+
+
+<hr><summary>Blog</summary><hr>
+
+<details><summary>Admin.py</summary>
+<img src="docs/validation/pep8-validation-blog-admin.png">
+</details>
+<details><summary>models.py</summary>
+<img src="docs/validation/pep8-validation-blog-models.png">
+</details>
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8-validation-blog-urls.png">
+</details>
+<details><summary>views.py</summary>
+<img src="docs/validation/pep8-validation-blog-views.png">
+</details>
+<details><summary>forms.py</summary>
+<img src="docs/validation/pep8-validation-blog-forms.png">
+</details>
+
+
+<hr><summary>Contact</summary><hr>
+
+<details><summary>Admin.py</summary>
+<img src="docs/validation/pep8-validation-contact-admin.png">
+</details>
+<details><summary>models.py</summary>
+<img src="docs/validation/pep8-validation-contact-models.png">
+</details>
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8-validation-contact-urls.png">
+</details>
+<details><summary>views.py</summary>
+<img src="docs/validation/pep8-validation-contact-views.png">
+</details>
+<details><summary>forms.py</summary>
+<img src="docs/validation/pep8-validation-contact-forms.png">
+</details>
 
 ### Lighthouse
 Performance, best practices and SEO was tested using Lighthouse.
@@ -880,7 +983,6 @@ Heroku Postgres
 
 19. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
 <hr>
-
 
 ### Fork Repository
 To fork the repository by following these steps:
