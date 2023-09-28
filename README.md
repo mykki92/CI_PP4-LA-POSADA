@@ -453,7 +453,7 @@ The W3C Jigsaw CSS Validation Service
 ### Lighthouse
 Performance, best practices and SEO was tested using Lighthouse.
 <details><summary>Home</summary>
-<img src="docs/validation/.png">
+<img src="docs/validation/lighthouse-home.png">
 </details>
 
 <details><summary>Tapas Menu</summary>
@@ -465,15 +465,15 @@ Performance, best practices and SEO was tested using Lighthouse.
 </details>
 
 <details><summary>Blog</summary>
-<img src="docs/validation/.png">
+<img src="docs/validation/lighthouse-blog.png">
 </details>
 
 <details><summary>Blog Detail</summary>
-<img src="docs/validation/.png">
+<img src="docs/validation/lighthouse-blog-detail.png">
 </details>
 
 <details><summary>Contact Us</summary>
-<img src="docs/validation/.png">
+<img src="docs/validation/lighthouse-contact.png">
 </details>
 
 <details><summary>Booking</summary>
