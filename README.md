@@ -439,6 +439,10 @@ The W3C Markup Validation Service
 </details>
 
 ### CSS Validation
+The W3C Jigsaw CSS Validation Service
+<details><summary>style.css</summary>
+<img src="docs/validation/validation-css.png">
+</details>
 
 ### JavaScript Validation
 
