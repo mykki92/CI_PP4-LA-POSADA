@@ -13,7 +13,7 @@
     </div>
     <!-- Blog Entries Column -->
     <div class="row justify-content-center">
-        {% for post in object_list %}
+        {% for post in page_obj %}
         <div class="col-10 col-md-5">
             <div class="card mb-5">
                 <div class="card-body">
@@ -47,17 +47,17 @@
     <!-- Pagination -->
     <div class="pagination justify-content-center">
         <span class="step-links">
-            {% if object_list.has_previous %}
-                <a href="?page={{ object_list.previous_page_number }}">&laquo; Previous</a>
-            {% endif %}
-    
-            <span class="current-page">
-                Page {{ object_list.number }} of {{ object_list.paginator.num_pages }} 
-            </span>
-    
-            {% if object_list.has_next %}
-                <a href="?page={{ object_list.next_page_number }}">Next &raquo;</a>
-            {% endif %}
+            {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}">&laquo; Previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">Next &raquo;</a>
+        {% endif %}
         </span>
     </div>
     <hr>
