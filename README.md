@@ -505,6 +505,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 </details>
 
 ### Wave
+WAVE was used to test the websites accessibility.
 
 ## Testing
 ### Manual Testing
@@ -796,6 +797,90 @@ The website was tested on the following browsers:
 <hr>
 
 ## Heroku Deployment
+[Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
+
+This application has been deployed from Github using Heroku. Here's how:
+
+1. Sign in to heroku.com
+<details>
+<img src="docs/heroku/heroku-deployment-01.png">
+</details>
+
+2. Create an app, give it a name and select a region
+<details>
+<img src="docs/heroku/heroku-deployment-02.png">
+</details>
+
+3. Under resources search for postgres, and add a Postgres database to the app
+<details>
+<img src="docs/heroku/heroku-deployment-03.png">
+</details>
+
+Heroku Postgres
+
+1. Note the DATABASE_URL, this can be set as an environment variable in Heroku and your local deployment(env.py)
+<details>
+<img src="docs/heroku/heroku-deployment-04.png">
+<img src="docs/heroku/heroku-deployment-05.png">
+</details>
+
+2. Install the plugins dj-database-url and psycopg2-binary.
+
+3. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file
+<details>
+<img src="docs/heroku/heroku-deployment-06.png">
+</details>
+
+4. Create a Procfile
+<details>
+<img src="docs/heroku/heroku-deployment-07.png">
+</details>
+
+5. In settings.py ensure the connection is to the Heroku postgres database unless you are using a test database, store in the env.py file
+<details>
+<img src="docs/heroku/heroku-deployment-08.png">
+<img src="docs/heroku/heroku-deployment-09.png">
+</details>
+
+6. Ensure debug is set to false in the settings.py file
+<details>
+<img src="docs/heroku/heroku-deployment-10.png">
+</details>
+
+7. Add localhost, and the herokuapp to the ALLOWED_HOSTS variable in settings.py
+
+8. Run "python3 manage.py showmigrations" to check the status of the migrations
+
+9. Run "python3 manage.py migrate" to migrate the database
+
+10. Run "python3 manage.py createsuperuser" to create a super/admin user
+
+11. Run "python3 manage.py loaddata categories.json" on the categories file in products/fixtures to create the categories
+
+12. Run "python3 manage.py loaddata products.json" on the products file in products/fixtures to create the products
+
+13. Install gunicorn and add it to the requirements.txt file using the command pip3 freeze > requirements.txt
+
+14. Disable collectstatic in Heroku before any code is pushed
+
+15. Ensure the following environment variables are set in Heroku
+<details>
+<img src="docs/heroku/heroku-deployment-11.png">
+</details>
+
+16. Connect the app to GitHub
+<details>
+<img src="docs/heroku/heroku-deployment-12.png">
+<img src="docs/heroku/heroku-deployment-13.png">
+</details>
+
+17. Click deploy to deploy your application to Heroku for the first time
+
+18. Click on the link provided to access the application
+
+19. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
+<hr>
+
 
 ### Fork Repository
 To fork the repository by following these steps:
