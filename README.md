@@ -392,6 +392,13 @@ The ContactUs Model contains the following:
 <hr>
 
 ### Pagination
+- Site contains pagination on the blog page and my bookings page
+<hr>
+<details><summary>Screenshots</summary>
+    <img src="docs/features/feature-pagination-blog.png">
+    <img src="docs/features/feature-pagination-my-bookings.png">
+</details>
+<hr>
 
 ## Validation
 ### HTML Validation
@@ -449,7 +456,7 @@ The W3C Jigsaw CSS Validation Service
 ### JavaScript Validation
 
 ### PEP8 Validation
-PEP8 Validation Service was used to check the code for PEP8 requirements via Pycodestyle as PEP8online was down
+Code Institute's own Python Linter pep8 was used to validate all Python code in this project. All code passed with no errors.
 
 <hr><summary>La Posada</summary><hr>
 
