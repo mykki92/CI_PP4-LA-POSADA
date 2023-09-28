@@ -392,6 +392,52 @@ The ContactUs Model contains the following:
 ### Pagination
 
 ## Validation
+### HTML Validation
+The W3C Markup Validation Service
+<details><summary>Home</summary>
+<img src="docs/validation/validation-html-home.png">
+</details>
+
+<details><summary>Tapas Menu</summary>
+<img src="docs/validation/validation-html-tapas-menu.png">
+</details>
+
+<details><summary>Drink Menu</summary>
+<img src="docs/validation/validation-html-drink-menu.png">
+</details>
+
+<details><summary>Blog</summary>
+<img src="docs/validation/validation-html-blog.png">
+</details>
+
+<details><summary>Contact Us</summary>
+<img src="docs/validation/validation-html-contact.png">
+</details>
+
+<details><summary>Booking</summary>
+<img src="docs/validation/validation-html-make-booking.png">
+</details>
+
+<details><summary>Amend Booking</summary>
+<img src="docs/validation/validation-html-amend-booking.png">
+</details>
+
+<details><summary>Cancel Booking</summary>
+<img src="docs/validation/validation-html-cancel-booking.png">
+</details>
+
+<details><summary>Sign Up</summary>
+<img src="docs/validation/validation-html-sign-up.png">
+</details>
+
+<details><summary>Sign In</summary>
+<img src="docs/validation/validation-html-sign-in.png">
+</details>
+
+<details><summary>Sign Out</summary>
+<img src="docs/validation/validation-html-signout.png">
+</details>
+
 ### CSS Validation
 
 ### JavaScript Validation
