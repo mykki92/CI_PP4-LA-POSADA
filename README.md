@@ -120,6 +120,12 @@ The site was designed to be clearly presented and easy to navigate with a unifor
 
 #### Database
 Built with Python and the Django framework with a Postgres database for the deployed Heroku app.
+<hr>
+<details><summary>Show Diagram</summary>
+    <img src="docs/database-schema.png">
+</details>
+<hr>
+
 ##### User Model
 The User Model contains the following:
 - user_id
@@ -686,6 +692,7 @@ The website was tested on the following browsers:
 <hr>
 
 ## Heroku Deployment
+
 ### Fork Repository
 To fork the repository by following these steps:
 1. Go to the GitHub repository
