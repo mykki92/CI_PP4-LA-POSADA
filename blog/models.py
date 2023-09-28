@@ -27,7 +27,7 @@ class Post(models.Model):
     content = models.TextField()
     image = CloudinaryField(
         'image',
-        default='placeholder'
+        default='placeholder',
         )
     excerpt = models.TextField(blank=True)
     status = models.IntegerField(choices=STATUS, default=0)
