@@ -449,6 +449,58 @@ The W3C Jigsaw CSS Validation Service
 ### PEP8 Validation
 
 ### Lighthouse
+Performance, best practices and SEO was tested using Lighthouse.
+<details><summary>Home</summary>
+<img src="docs/validation/.png">
+</details>
+
+<details><summary>Tapas Menu</summary>
+<img src="docs/validation/lighthouse-tapas-menu.png">
+</details>
+
+<details><summary>Drink Menu</summary>
+<img src="docs/validation/lighthouse-drink-menu.png">
+</details>
+
+<details><summary>Blog</summary>
+<img src="docs/validation/.png">
+</details>
+
+<details><summary>Blog Detail</summary>
+<img src="docs/validation/.png">
+</details>
+
+<details><summary>Contact Us</summary>
+<img src="docs/validation/.png">
+</details>
+
+<details><summary>Booking</summary>
+<img src="docs/validation/lighthouse-booking.png">
+</details>
+
+<details><summary>My Bookings</summary>
+<img src="docs/validation/lighthouse-my-bookings.png">
+</details>
+
+<details><summary>Amend Booking</summary>
+<img src="docs/validation/lighthouse-amend-booking.png">
+</details>
+
+<details><summary>Cancel Booking</summary>
+<img src="docs/validation/lighthouse-cancel-booking.png">
+</details>
+
+<details><summary>Sign Up</summary>
+<img src="docs/validation/lighthouse-signup.png">
+</details>
+
+<details><summary>Sign In</summary>
+<img src="docs/validation/lighthouse-sign-in.png">
+</details>
+
+<details><summary>Sign Out</summary>
+<img src="docs/validation/lighthouse-sign-out.png">
+</details>
 
 ### Wave
 
