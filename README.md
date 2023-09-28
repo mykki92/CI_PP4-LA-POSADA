@@ -1,6 +1,8 @@
 # **La Posada**
 Developed by Michael Roberts
 
+![Am I Responsive](docs/am-i-responsive.png)
+
 💻 [Visit live website](https://pp4-la-posada-a7d4e62f5c13.herokuapp.com/)  
 (Ctrl + click to open in new tab)
 
