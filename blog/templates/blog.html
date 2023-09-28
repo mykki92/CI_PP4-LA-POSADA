@@ -19,7 +19,7 @@
                 <div class="card-body">
                     <div class="image-container">
                         {% if "placeholder" in post.image.url %}
-                        <img class="card-img-top" alt="blog-image" src="/static/images/logo.png">
+                        <img class="card-img-top" alt="blog-image" src="{% static 'images/logo.png' %}">
                         {% else %}
                         <img class="card-img-top" alt="blog-image" src=" {{ post.image.url }}">
                         {% endif %}

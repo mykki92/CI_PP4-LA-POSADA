@@ -15,7 +15,7 @@
             </div>
             <div class="d-md-block col-md-6 masthead-image">
                 {% if "placeholder" in post.image.url %}
-                <img src="/static/images/logo.png" width="100%">
+                <img src="{% static 'images/logo.png' %}" width="100%">
                 {% else %}
                 <img src=" {{ post.image.url }}" width="100%">
                 {% endif %}
