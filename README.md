@@ -325,6 +325,7 @@ Wireframes were created using Balsamiq
 ### Header & Navigation
 - Page header is fixed at the top of every page
 - Includes a navigation bar which collapses to a burger icon with a dropdown menu on small screen sizes
+- User Stories covered: 2
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-navbar.png">
@@ -334,6 +335,7 @@ Wireframes were created using Balsamiq
 
 ### Home Page
 - Home page includes an image carousel and an introduction section
+- User Stories covered: 1
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-homepage-carousel.png">
@@ -341,17 +343,9 @@ Wireframes were created using Balsamiq
 </details>
 <hr>
 
-### Footer
-- At the bottom of every page
-- Contains social media links
-<hr>
-<details><summary>Screenshots</summary>
-    <img src="docs/features/feature-footer.png">
-</details>
-<hr>
-
 ### Sign Up
 - A page for users to sign up for an account
+- User Stories covered: 5
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-signup.png">
@@ -360,6 +354,7 @@ Wireframes were created using Balsamiq
 
 ### Sign In 
 - A page for users to login to their account
+- User Stories covered: 5
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-signin.png">
@@ -368,6 +363,7 @@ Wireframes were created using Balsamiq
 
 ### Sign Out
 - A page for users to log out
+- User Stories covered: 5
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-signout.png">
@@ -376,6 +372,7 @@ Wireframes were created using Balsamiq
 
 ### Booking
 - Displays a form for the user to make a booking
+- User Stories covered: 6, 18, 19
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-booking.png">
@@ -384,6 +381,7 @@ Wireframes were created using Balsamiq
 
 ### My Bookings
 - Displays a paginated list of the users bookings
+- User Stories covered: 8
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-my-bookings.png">
@@ -392,6 +390,7 @@ Wireframes were created using Balsamiq
 
 ### Amend Booking
 - Display a form for the user to change their booking details
+- User Stories covered: 9
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-amend-booking.png">
@@ -400,6 +399,7 @@ Wireframes were created using Balsamiq
 
 ### Cancel Booking
 - Allows the user to cancel their booking
+- User Stories covered: 9
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-cancel-booking.png">
@@ -409,6 +409,7 @@ Wireframes were created using Balsamiq
 ### Tapas Menu
 - Displays a menu of food items
 - Categorised into Salads & Cold Cuts, Hot Dishes, Sides and Desserts
+- User Stories covered: 3
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-tapas-menu-01.png">
@@ -422,6 +423,7 @@ Wireframes were created using Balsamiq
 ### Drinks Menu
 - Displays a menu of drink items
 - Categorised into Beers & Ciders, Wines & Sparlking, Cocktails and Spirits
+- User Stories covered: 3
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-drinks-menu-01.png">
@@ -433,6 +435,7 @@ Wireframes were created using Balsamiq
 
 ### Blog
 - Displays a paginated list of blog posts
+- User Stories covered: 10
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-blog.png">
@@ -442,6 +445,7 @@ Wireframes were created using Balsamiq
 ### Blog Detail
 - Displays a detailed view of the selected blog post
 - Allows the user to like and comment on the post
+- User Stories covered: 10
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-blog-detail-01.png">
@@ -453,6 +457,7 @@ Wireframes were created using Balsamiq
 ### Contact Us
 - Displays an embedded Google map with the restaurants address, opening times and phone number
 - Displays a form for users to message the restaurant
+- User Stories covered: 4, 18, 19
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-contact-us-01.png">
@@ -463,6 +468,7 @@ Wireframes were created using Balsamiq
 ### Footer
 - At the bottom of every page
 - Contains social media links
+- User Stories covered: 4, 18
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-footer.png">
@@ -471,6 +477,7 @@ Wireframes were created using Balsamiq
 
 ### Pagination
 - Site contains pagination on the blog page and my bookings page
+- User Stories covered: 2
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/features/feature-pagination-blog.png">
@@ -1025,6 +1032,7 @@ The website was tested on the following browsers:
 | ----------- | ----------- |
 | Blog page not linking from navigation bar | Correct url pattern by adding 'blog/' to the path |
 | Pagination not working on blog page | Change post_list to page_obj |
+| Images not loading on deployed Heroku site | Change normal image tags to django template tags |
 <hr>
 
 ## Heroku Deployment
