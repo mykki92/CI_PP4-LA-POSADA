@@ -116,7 +116,7 @@ La Posada is a fictional tapas restaurant in Brighton, England. This website aim
 ## Design
 ### Colours
 The website was designed to be simple but stylish, the site implements multiple images and forms so use of fonting and color was kept minimal so as not to overload the pages.
-Dark grey themes were used for the header and footer with a white background set to the main body of the page. White font color was used against the grey backgrounds and black against the white backgrounds. All pages were tested and validated for contrast.
+Dark grey themes were used for the header and footer with a white background set to the main body of the page. Light grey and white font colors were used against the dark grey backgrounds and black against the white backgrounds. All pages were tested and validated for contrast.
 
 ### Fonts
 The fonts selected were Josefin Sans with sans-serif as a backup, sourced from Google Fonts.
