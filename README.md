@@ -617,6 +617,51 @@ Performance, best practices and SEO was tested using Lighthouse.
 ### Wave
 WAVE was used to test the websites accessibility.
 
+<details><summary>Home</summary>
+<img src="docs/validation/validation-wave-home.png">
+</details>
+
+<details><summary>Sign Up</summary>
+<img src="docs/validation/validation-wave-signup.png">
+</details>
+
+<details><summary>Sign In</summary>
+<img src="docs/validation/validation-wave-signin.png">
+</details>
+
+<details><summary>Tapas Menu</summary>
+<img src="docs/validation/validation-wave-tapas-menu.png">
+</details>
+
+<details><summary>Drinks Menu</summary>
+<img src="docs/validation/validation-wave-drinks-menu.png">
+</details>
+
+<details><summary>Booking</summary>
+<img src="docs/validation/validation-wave-booking.png">
+</details>
+
+<details><summary>Amend Booking</summary>
+<img src="docs/validation/validation-wave-amend-booking.png">
+</details>
+
+<details><summary>Cancel Booking</summary>
+<img src="docs/validation/validation-wave-cancel-booking.png">
+</details>
+
+<details><summary>Blog</summary>
+<img src="docs/validation/validation-wave-blog.png">
+</details>
+
+<details><summary>Blog Expanded</summary>
+<img src="docs/validation/validation-wave-blog-expanded.png">
+</details>
+
+<details><summary>Contact Us</summary>
+<img src="docs/validation/validation-wave-contact.png">
+</details>
+
+
 ## Testing
 ### Manual Testing
 1.	As a user I want to know more about the restaurant and get a quick overview.
