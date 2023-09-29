@@ -93,6 +93,25 @@ La Posada is a fictional tapas restaurant in Brighton, England. This website aim
 18.	As an site owner I want to provide clearly presented contact and booking details to maximise customer interaction.
 19.	As an site owner I want validated data entered into my site so that to keep my databases accurate and efficient.
 
+### Kanban, Epics & User Stories
+- GitHub Kanban was used to track user stories
+- Epics were created using the milestones feature
+
+<details><summary>Epics</summary>
+    <img src="docs/features/feature-kanban-epics.png">
+    <img src="docs/features/feature-kanban-epic-01.png">
+    <img src="docs/features/feature-kanban-epic-02.png">
+    <img src="docs/features/feature-kanban-epic-03.png">
+    <img src="docs/features/feature-kanban-epic-04.png">
+</details>
+
+<details><summary>User Stories</summary>
+    <img src="docs/features/feature-user-stories.png">
+</details>
+
+<details><summary>Kanban</summary>
+    <img src="docs/features/feature-kanban.png">
+</details>
 
 ## Design
 ### Colours
