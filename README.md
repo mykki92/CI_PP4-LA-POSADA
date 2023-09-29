@@ -302,7 +302,7 @@ Wireframes were created using Balsamiq
 ### Libraries & Tools
 - [Am I Responsive](http://ami.responsivedesign.is/)
 - [Balsamiq](https://balsamiq.com/)
-- [Bootstrap v5.2](https://getbootstrap.com/)
+- [Bootstrap v4.6](https://getbootstrap.com/)
 - [Cloudinary](https://cloudinary.com/)
 - [Favicon.io](https://favicon.io)
 - [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
@@ -317,7 +317,7 @@ Wireframes were created using Balsamiq
 - Validation:
   - [WC3 Validator](https://validator.w3.org/)
   - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
-  - [Code Institute Python Linter (PEP8)(https://pep8ci.herokuapp.com/)(PEP8)](https://pypi.org/project/pycodestyle/)
+  - [Code Institute Python Linter (PEP8)](https://pep8ci.herokuapp.com/)
   - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
   - [Wave Validator](https://wave.webaim.org/)
 
@@ -1155,7 +1155,7 @@ You can clone the repository by following these steps:
 Images used were sourced from Pexels.com and the logo was generated at Looka.com.
 
 ### Code
-Bootstrap dark navigation theme was used alongside boostrap classes and carousel
+Bootstrap classes were used to handle layout and styles and for the image carousel.
 
 ## Acknowledgements
 - My Code Institute Mentor Mo Shami for his guidance and advice.
