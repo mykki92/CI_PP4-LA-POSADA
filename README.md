@@ -218,6 +218,59 @@ The ContactUs Model contains the following:
 - message
 
 ### Wireframes
+Wireframes were created using Balsamiq
+<details><summary>Home</summary>
+    <img src="docs/wireframes.png">
+</details>
+
+<details><summary>Tapas Menu</summary>
+    <img src="docs/wireframes.png">
+</details>
+
+<details><summary>Drinks Menu</summary>
+    <img src="docs/wireframes.png">
+</details>
+
+<details><summary>Blog</summary>
+    <img src="docs/wireframes.png">
+</details>
+
+<details><summary>Blog Expanded</summary>
+    <img src="docs/wireframes.png">
+</details>
+
+<details><summary>Contact Us</summary>
+    <img src="docs/wireframes.png">
+</details>
+
+<details><summary>Booking</summary>
+    <img src="docs/wireframes.png">
+</details>
+
+<details><summary>My Bookings</summary>
+    <img src="docs/wireframes.png">
+</details>
+
+<details><summary>Amend Booking</summary>
+    <img src="docs/wireframes.png">
+</details>
+
+<details><summary>Cancel Booking</summary>
+    <img src="docs/wireframes.png">
+</details>
+
+<details><summary>Sign Up</summary>
+    <img src="docs/wireframes.png">
+</details>
+
+<details><summary>Sign In</summary>
+    <img src="docs/wireframes.png">
+</details>
+
+<details><summary>Sign Out</summary>
+    <img src="docs/wireframes.png">
+</details>
+
 
 ## Technologies Used
 ### Languages & Frameworks
@@ -452,8 +505,6 @@ The W3C Jigsaw CSS Validation Service
 <details><summary>style.css</summary>
 <img src="docs/validation/validation-css.png">
 </details>
-
-### JavaScript Validation
 
 ### PEP8 Validation
 Code Institute's own Python Linter pep8 was used to validate all Python code in this project. All code passed with no errors.
@@ -948,7 +999,7 @@ The website was tested on the following browsers:
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 | Blog page not linking from navigation bar | Correct url pattern by adding 'blog/' to the path |
-| Pagination not working on blog page | Not yet fixed |
+| Pagination not working on blog page | Change post_list to page_obj |
 <hr>
 
 ## Heroku Deployment
