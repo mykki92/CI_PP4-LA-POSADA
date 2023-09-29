@@ -220,55 +220,55 @@ The ContactUs Model contains the following:
 ### Wireframes
 Wireframes were created using Balsamiq
 <details><summary>Home</summary>
-    <img src="docs/wireframes.png">
+    <img src="docs/wireframes/wireframe-homepage.png">
 </details>
 
 <details><summary>Tapas Menu</summary>
-    <img src="docs/wireframes.png">
+    <img src="docs/wireframes/wireframe-tapas-menu.png">
 </details>
 
 <details><summary>Drinks Menu</summary>
-    <img src="docs/wireframes.png">
+    <img src="docs/wireframes/wireframe-drink-menu.png">
 </details>
 
 <details><summary>Blog</summary>
-    <img src="docs/wireframes.png">
+    <img src="docs/wireframes/wireframe-blog.png">
 </details>
 
-<details><summary>Blog Expanded</summary>
-    <img src="docs/wireframes.png">
+<details><summary>Blog Detail</summary>
+    <img src="docs/wireframes/wireframe-blog-detail.png">
 </details>
 
 <details><summary>Contact Us</summary>
-    <img src="docs/wireframes.png">
+    <img src="docs/wireframes/wireframe-contact.png">
 </details>
 
 <details><summary>Booking</summary>
-    <img src="docs/wireframes.png">
+    <img src="docs/wireframes/wireframe-booking.png">
 </details>
 
 <details><summary>My Bookings</summary>
-    <img src="docs/wireframes.png">
+    <img src="docs/wireframes/wireframe-my-bookings.png">
 </details>
 
 <details><summary>Amend Booking</summary>
-    <img src="docs/wireframes.png">
+    <img src="docs/wireframes/wireframe-amend-booking.png">
 </details>
 
 <details><summary>Cancel Booking</summary>
-    <img src="docs/wireframes.png">
+    <img src="docs/wireframes/wireframe-cancel-booking.png">
 </details>
 
 <details><summary>Sign Up</summary>
-    <img src="docs/wireframes.png">
+    <img src="docs/wireframes/wireframe-signup.png">
 </details>
 
 <details><summary>Sign In</summary>
-    <img src="docs/wireframes.png">
+    <img src="docs/wireframes/wireframe-sign-in.png">
 </details>
 
 <details><summary>Sign Out</summary>
-    <img src="docs/wireframes.png">
+    <img src="docs/wireframes/wireframe-sign-out.png">
 </details>
 
 
