@@ -764,9 +764,12 @@ WAVE was used to test the websites accessibility.
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Header & Navigation | Click throught the navigation links | Navigation is clear and simple and each page loads correctly | Works as expected |
+| Pagination | Navigate to the blog or my bookings pages | Click throught the pages of blog posts or bookings | Works as expected |
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/testing/user-story-testing-02-01.png">
+    <img src="docs/testing/user-story-testing-02-02.png">
+    <img src="docs/testing/user-story-testing-02-03.png">
 </details>
 <hr>
 
@@ -774,7 +777,8 @@ WAVE was used to test the websites accessibility.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Menus | Navigate to the menus dropdown in the nav bar | Find up to date food and drink menus with descriptions and prices | Works as expected |
+| Tapas Menu | Open the Menus dropdown in the nav bar and click Tapas Menu | Find up to date tapas menus with descriptions and prices | Works as expected |
+| Drinks Menu | Open the Menus dropdown in the nav bar and click Drinks Menu | Find up to date tapas menus with descriptions and prices | Works as expected |
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/testing/user-story-testing-03-01.png">
@@ -791,20 +795,26 @@ WAVE was used to test the websites accessibility.
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Contact Us | Click on the 'Contact Us' link in the navigation bar and scroll to bottom of page | Find opening hours, contact details and social links in the page footers | Works as expected |
+| Footer | Scroll to the bottom of any page | Find social media links | Works as expected |
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/testing/user-story-testing-04-01.png">
+    <img src="docs/testing/user-story-testing-04-02.png">
 </details>
 <hr>
 
-5. As a user I want to create an account so I can make bookings and enquiries and interact with the restaurants blog page.
+5. As a user I want to create and manage an account so I can make bookings and enquiries and interact with the restaurants blog page.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Sign Up | Navigate to the sign up page and enter a username and password | Access previously unavailable features such as table booking, contact form and blog commenting  | Works as expected |
+| Sign In | Navigate to the sign in page and enter username and password | Sign in to your account | Works as expected |
+| Sign Out | Navigate to the sign out page and confirm that you want to sign out | Sign out from your account  | Works as expected |
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/testing/user-story-testing-05-01.png">
+    <img src="docs/testing/user-story-testing-05-02.png">
+    <img src="docs/testing/user-story-testing-05-03.png">
 </details>
 <hr>
 
@@ -836,7 +846,7 @@ WAVE was used to test the websites accessibility.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| View Booking | Navigate to the View Bookings page | See a list view of all bookings associated with your account | Works as expected |
+| My Bookings | Navigate to the View Bookings page | See a list view of all bookings associated with your account | Works as expected |
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/testing/user-story-testing-08-01.png">
@@ -861,6 +871,7 @@ WAVE was used to test the websites accessibility.
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Blog | Navigate to the blog page | See a list of blog posts which can be clicked to see full details | Works as expected |
+| Blog Detail | Click on a blog post tile to open expanded view | See the full blog post article with likes and comment section | Works as expected |
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/testing/user-story-testing-10-01.png">
@@ -967,11 +978,14 @@ WAVE was used to test the websites accessibility.
 |-------------|------------|---------------------|-------------------|
 | Booking | Navigate to the booking page when signed in | See a simple and clearly presented booking form  | Works as expected |
 | Contact Us | Navigate to the contact us page | See a map with the restaurants location, opening hours, contact details and a contact form  | Works as expected |
+| Footer | Scroll to the bottom of any page | Find social media links | Works as expected |
+
 <hr>
 <details><summary>Screenshots</summary>
     <img src="docs/testing/user-story-testing-18-01.png">
     <img src="docs/testing/user-story-testing-18-02.png">
     <img src="docs/testing/user-story-testing-18-03.png">
+    <img src="docs/testing/user-story-testing-18-04.png">
 </details>
 <hr>
 
