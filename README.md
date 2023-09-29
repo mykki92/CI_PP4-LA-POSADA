@@ -314,6 +314,12 @@ Wireframes were created using Balsamiq
 - [jQuery](https://jquery.com)
 - [Postgres](https://www.postgresql.org/)
 - [Summernote](https://summernote.org/)
+- Validation:
+  - [WC3 Validator](https://validator.w3.org/)
+  - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
+  - [Code Institute Python Linter (PEP8)(https://pep8ci.herokuapp.com/)(PEP8)](https://pypi.org/project/pycodestyle/)
+  - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+  - [Wave Validator](https://wave.webaim.org/)
 
 ## Features
 ### Header & Navigation
